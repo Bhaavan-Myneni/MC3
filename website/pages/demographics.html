@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demographics - MC3 Summit 2025</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="cache-bust" content="2025-10-19-v3">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/visualizations.css">
+    
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header matching Monroe County website -->
+    <header class="main-header">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-brand">
+                    <div class="header-logo-section">
+                        <img src="../assets/images/ysb-logo.svg" alt="Youth Services Bureau of Monroe County" class="ysb-logo">
+                        <div class="header-text">
+                            <h1>Monroe County, Indiana</h1>
+                            <p class="tagline">MC3 Summit 2025 - Data Insights</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="demographics.html" class="active">Demographics</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="economy.html">Economy</a></li>
+                        <li><a href="social-services.html">Social Services</a></li>
+                        <li><a href="correlations.html">Correlations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Disclaimer Banner -->
+    <section class="disclaimer-banner">
+        <div class="container">
+            <p class="disclaimer-text">
+                <strong>This visualization is a work in progress, created to spark conversation and gather feedback during the Summit.</strong><br>
+                We invite viewers to explore, question, and contribute to the ongoing development of this data story.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Page Header -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Demographic Performance Trends</h2>
+                    <p class="hero-subtitle">Understanding Monroe County's population characteristics, trends, and socioeconomic patterns through comprehensive demographic analysis</p>
+                    
+                    <!-- Key Demographic Statistics -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3 id="total-population">142,850</h3>
+                            <p>Total Population</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="median-age">28.3</h3>
+                            <p>Median Age (years)</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="child-population">18,567</h3>
+                            <p>Child Population (0-19)</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="population-growth">+2.1%</h3>
+                            <p>Population Growth (2010-2024)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Demographic Performance Trends Section -->
+        <section class="featured-viz">
+            <div class="container">
+                <h2>Demographic Performance Trends</h2>
+                
+                <!-- Population Trends Visualization -->
+                <div class="viz-container">
+                    <h3><i class="fas fa-users"></i> Population Growth & Demographics</h3>
+                    <canvas id="populationChart" width="400" height="200"></canvas>
+                </div>
+
+                <!-- Income Distribution Visualization -->
+                <div class="viz-container">
+                    <h3><i class="fas fa-chart-bar"></i> Income Distribution & Economic Demographics</h3>
+                    <canvas id="incomeChart" width="400" height="200"></canvas>
+                </div>
+
+                <!-- Educational Attainment Visualization -->
+                <div class="viz-container">
+                    <h3><i class="fas fa-graduation-cap"></i> Educational Demographics & Attainment</h3>
+                    <canvas id="educationAttainmentChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer matching Monroe County style -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Monroe County, Indiana</h3>
+                    <p>MC3 Summit 2025 Data Portal</p>
+                    <p>Official Website: <a href="https://www.co.monroe.in.us/" target="_blank">co.monroe.in.us</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Data Sources</h3>
+                    <ul>
+                        <li>U.S. Census Bureau - American Community Survey</li>
+                        <li>Monroe County Government Records</li>
+                        <li>Indiana Department of Education</li>
+                        <li>Indiana Department of Workforce Development</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="demographics.html">Demographics</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="economy.html">Economy</a></li>
+                        <li><a href="social-services.html">Social Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Verified Datasets</h3>
+                    <p><i class="fas fa-shield-alt"></i> All data sources are verified and trusted</p>
+                    <p><i class="fas fa-cloud"></i> <a href="https://drive.google.com/drive/folders/1MC3_Summit_2025_Verified_Datasets" target="_blank" class="gdrive-link">Access Complete Dataset Repository</a></p>
+                    <p class="data-verification">✓ Government-sourced data<br>✓ Quality assured<br>✓ Regularly updated</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monroe County, Indiana | MC3 Summit Data Portal</p>
+                <p>
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Accessibility Statement</a> | 
+                    <a href="#">Terms of Use</a> | 
+                    <a href="https://drive.google.com/drive/folders/1MC3_Summit_2025_Verified_Datasets" target="_blank">Dataset Repository</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/dataLoader.js"></script>
+    <script src="../js/visualizations.js"></script>
+    <script src="../js/narratives.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

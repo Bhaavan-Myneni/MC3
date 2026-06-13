@@ -1,0 +1,118 @@
+{
+  "generated_at": 1781388030.5215356,
+  "checks": [
+    {
+      "check": "Resume claim evidence tracker",
+      "path": "docs/resume_claim_evidence_tracker.md",
+      "passed": true
+    },
+    {
+      "check": "ACS source integration doc",
+      "path": "docs/acs_source_integration.md",
+      "passed": true
+    },
+    {
+      "check": "Theme coverage matrix",
+      "path": "docs/theme_coverage_matrix.md",
+      "passed": true
+    },
+    {
+      "check": "Policy recommendations",
+      "path": "docs/policy_recommendations.md",
+      "passed": true
+    },
+    {
+      "check": "ETL time reduction benchmark doc",
+      "path": "docs/etl_time_reduction_benchmark.md",
+      "passed": true
+    },
+    {
+      "check": "Accessibility evaluation doc",
+      "path": "docs/accessibility_improvement_evaluation.md",
+      "passed": true
+    },
+    {
+      "check": "Tableau claim check",
+      "path": "docs/tableau_claim_check.md",
+      "passed": true
+    },
+    {
+      "check": "Public health or CDC WONDER documentation",
+      "path": "docs/cdc_wonder_source_integration.md",
+      "passed": true
+    },
+    {
+      "check": "Processed output: etl_benchmark_results.json",
+      "path": "data/processed/etl_benchmark_results.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: manual_baseline_results.json",
+      "path": "data/processed/manual_baseline_results.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: acs_housing_demographics_clean.json",
+      "path": "data/processed/acs_housing_demographics_clean.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: housing_stability_clean.json",
+      "path": "data/processed/housing_stability_clean.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: food_access_clean.json",
+      "path": "data/processed/food_access_clean.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: public_health_mental_health_clean.json",
+      "path": "data/processed/public_health_mental_health_clean.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: cdc_wonder_suicide_clean.json",
+      "path": "data/processed/cdc_wonder_suicide_clean.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: mental_health_clean.json",
+      "path": "data/processed/mental_health_clean.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: phase8_theme_validation_report.json",
+      "path": "data/processed/phase8_theme_validation_report.json",
+      "passed": true
+    },
+    {
+      "check": "Processed output: accessibility_audit_summary.json",
+      "path": "data/processed/accessibility_audit_summary.json",
+      "passed": true
+    },
+    {
+      "check": "Tableau workbook (.twb)",
+      "path": "tableau/mc3_child_poverty_trends.twb",
+      "passed": true
+    },
+    {
+      "check": "CDC WONDER raw extract",
+      "path": "data/raw/public_health/cdc_wonder/monroe_county_suicide_deaths_wonder_export.txt",
+      "passed": true
+    },
+    {
+      "check": "Accessibility audits directory",
+      "path": "docs/accessibility_audits",
+      "passed": true
+    },
+    {
+      "check": "README Resume Claim Evidence section",
+      "path": "README.md",
+      "passed": true
+    }
+  ],
+  "passed": 22,
+  "failed": 0,
+  "total": 22
+}

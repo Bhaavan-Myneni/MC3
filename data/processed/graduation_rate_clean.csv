@@ -1,0 +1,13 @@
+year,indicator_value,indicator_unit,data_topic,indicator_name,source_file,etl_processed_at,value_type,verified,county_fips,county_name
+2006,80.94,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2007,80.26,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2008,82.67,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2009,83.85,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2010,87.24,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2011,88.51,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2012,93.16,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2013,93.73,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2014,92.3,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2015,94.75,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2016,93.83,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County
+2017,90.77,percent,education,high_school_graduation_rate,data/raw/education/reference_repo/High school graduation rate.xlsx,2026-06-13T22:00:48.376246+00:00,rate_percent,True,18105,Monroe County

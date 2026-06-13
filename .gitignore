@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Large archives
+*.zip
+
+# Duplicate raw dataset archive folders
+DATASET-20251012T022637Z-1-001/
+DATASET-20251012T022637Z-1-001 (2).zip
+DATASET-20251012T022637Z-1-001 (3).zip
+DATASET-20251012T022637Z-1-001.zip
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# Local database files
+*.sqlite
+*.db
+etl/vendor/
+playwright/
+.cache/

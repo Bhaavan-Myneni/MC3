@@ -1,0 +1,112 @@
+[
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2014,
+    "children_in_poverty":0.202000007,
+    "children_in_poverty_ci_high":0.2430000007,
+    "children_in_poverty_ci_low":0.1609999985,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":20.2
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2015,
+    "children_in_poverty":0.1780000031,
+    "children_in_poverty_ci_high":0.2189999968,
+    "children_in_poverty_ci_low":0.1369999945,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":17.8
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2016,
+    "children_in_poverty":0.1899999976,
+    "children_in_poverty_ci_high":0.2319999933,
+    "children_in_poverty_ci_low":0.1480000019,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":19.0
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2017,
+    "children_in_poverty":0.1819999963,
+    "children_in_poverty_ci_high":0.2199999988,
+    "children_in_poverty_ci_low":0.1439999938,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":18.2
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2018,
+    "children_in_poverty":0.175999999,
+    "children_in_poverty_ci_high":0.2153189927,
+    "children_in_poverty_ci_low":0.1366810054,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":17.6
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2019,
+    "children_in_poverty":0.1720000058,
+    "children_in_poverty_ci_high":0.2077450007,
+    "children_in_poverty_ci_low":0.1362549961,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":17.2
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2020,
+    "children_in_poverty":0.1420000046,
+    "children_in_poverty_ci_high":0.1801279932,
+    "children_in_poverty_ci_low":0.1038720012,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":14.2
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2021,
+    "children_in_poverty":0.150000006,
+    "children_in_poverty_ci_high":0.1893189996,
+    "children_in_poverty_ci_low":0.1106809974,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":15.0
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2022,
+    "children_in_poverty":0.1369999945,
+    "children_in_poverty_ci_high":0.1715530008,
+    "children_in_poverty_ci_low":0.1024470031,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":13.7
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2023,
+    "children_in_poverty":0.1439999938,
+    "children_in_poverty_ci_high":0.1868939996,
+    "children_in_poverty_ci_low":0.1011060029,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":14.4
+  },
+  {
+    "county_id":"05000US18105",
+    "county":"Monroe County, IN",
+    "year":2024,
+    "children_in_poverty":0.1400000006,
+    "children_in_poverty_ci_high":0.1852765977,
+    "children_in_poverty_ci_low":0.0947234035,
+    "county_fips":18105,
+    "children_in_poverty_rate_pct":14.0
+  }
+]

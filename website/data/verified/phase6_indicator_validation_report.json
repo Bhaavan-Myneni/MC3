@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-06-13T22:00:48.235889+00:00",
+  "indicators_attempted": [
+    {
+      "name": "graduation_rate",
+      "label": "High school graduation rate"
+    },
+    {
+      "name": "unemployment_rate",
+      "label": "County unemployment rate (STATSIN)"
+    },
+    {
+      "name": "demographics_population",
+      "label": "Total child population by age group"
+    },
+    {
+      "name": "social_services_indicator",
+      "label": "SNAP monthly average participants"
+    }
+  ],
+  "indicators_processed": [
+    {
+      "name": "graduation_rate",
+      "label": "High school graduation rate",
+      "rows": 12,
+      "year_range": [
+        2006,
+        2017
+      ],
+      "latest_value": 90.77,
+      "indicator_unit": "percent"
+    },
+    {
+      "name": "unemployment_rate",
+      "label": "County unemployment rate (STATSIN)",
+      "rows": 6,
+      "year_range": [
+        2020,
+        2025
+      ],
+      "latest_value": 5.8,
+      "indicator_unit": "percent"
+    },
+    {
+      "name": "demographics_population",
+      "label": "Total child population by age group",
+      "rows": 22,
+      "year_range": [
+        2000,
+        2021
+      ],
+      "latest_value": 44236.0,
+      "indicator_unit": "count"
+    },
+    {
+      "name": "social_services_indicator",
+      "label": "SNAP monthly average participants",
+      "rows": 34,
+      "year_range": [
+        1990,
+        2023
+      ],
+      "latest_value": 7527.0,
+      "indicator_unit": "count"
+    }
+  ],
+  "indicators_skipped": [],
+  "source_files_used": [
+    "data/raw/education/reference_repo/High school graduation rate.xlsx",
+    "data/raw/economy/reference_repo/Unemployment_Estimates/STATSIN_asu20.xlsx; data/raw/economy/reference_repo/Unemployment_Estimates/STATSIN_asu21.xlsx; data/raw/economy/reference_repo/Unemployment_Estimates/STATSIN_asu22.xlsx; data/raw/economy/reference_repo/Unemployment_Estimates/STATSIN_asu23.xlsx; data/raw/economy/reference_repo/Unemployment_Estimates/STATSIN_asu24.xlsx; data/raw/economy/reference_repo/Unemployment_Estimates/STATSIN_asu25.xlsx",
+    "data/raw/social_services/reference_repo/Child population by age group.xlsx",
+    "data/raw/social_services/reference_repo/Monthly average number of persons issued food stamps (SNAP).xlsx"
+  ],
+  "metrics_calculated": {
+    "graduation_rate": {
+      "latest_year": 2017,
+      "latest_value": 90.77,
+      "indicator_unit": "percent",
+      "indicator_name": "high_school_graduation_rate"
+    },
+    "unemployment_rate": {
+      "latest_year": 2025,
+      "latest_value": 5.8,
+      "indicator_unit": "percent",
+      "indicator_name": "county_unemployment_rate"
+    },
+    "demographics_population": {
+      "latest_year": 2021,
+      "latest_value": 44236.0,
+      "indicator_unit": "count",
+      "indicator_name": "total_child_population"
+    },
+    "social_services_indicator": {
+      "latest_year": 2023,
+      "latest_value": 7527.0,
+      "indicator_unit": "count",
+      "indicator_name": "snap_participants_monthly_avg"
+    }
+  },
+  "validation_warnings": [
+    {
+      "type": "dashboard_graduation_claim",
+      "message": "dashboard_summary.json claims 95% high school graduation rate. Verified Kids Count source shows 90.77% for Monroe County in 2017 (latest year in file). Do not use 95% unless traced to a newer source."
+    },
+    {
+      "type": "dashboard_unemployment_claim",
+      "message": "dashboard_summary.json claims 3.9% unemployment rate. Verified STATSIN county rates for Monroe range from 5.4% to 6.4% in available files. Do not use 3.9% unless traced to a matching source."
+    }
+  ],
+  "missing_methodology_notes": [
+    "Child population is summed across age groups; overlapping age definitions should be reviewed before policy use."
+  ]
+}

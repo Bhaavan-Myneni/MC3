@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-13T21:59:53.646671+00:00",
+  "database": "D77 - Multiple Cause of Death, 1999-2020+",
+  "wonder_url": "https://wonder.cdc.gov/mcd.html",
+  "query_description": "Monroe County, Indiana suicide deaths (ICD-10 intentional self-harm) by year",
+  "county_fips": "18105",
+  "api_attempted": true,
+  "api_status": "finder-stage parameter requirements blocked automated XML export (2026-06-13)",
+  "playwright_attempted": true,
+  "export_method": "nchs_vital_statistics_via_idoh_appendix_e",
+  "primary_source_citation": "Indiana Department of Health. (2024). 2023 Indiana Overdose and Suicide Report. Appendix E Table E.1 \u2014 Suicide Deaths by County of Residence. https://www.in.gov/health/overdose-prevention/files/2023-Indiana-Overdose-and-Suicide-Report-_FINAL.pdf",
+  "nchs_methodology": "ICD-10 codes X60-X84, Y87.0 (same as CDC WONDER D77)",
+  "data_use_restrictions": "https://wonder.cdc.gov/datause.html",
+  "notes": "Raw file stored in CDC WONDER tab-delimited format. Counts are from IDOH-published NCHS vital statistics tables using the same death-certificate methodology as WONDER D77."
+}

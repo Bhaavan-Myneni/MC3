@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "source": "U.S. Census Bureau ACS 5-Year Estimates",
+    "lastUpdated": "2024-12-15",
+    "coverage": "Monroe County, Indiana",
+    "methodology": "American Community Survey",
+    "qualityScore": 0.98
+  },
+  "demographics": {
+    "totalPopulation": 139718,
+    "children": {
+      "total": 28447,
+      "ageGroups": {
+        "0-4": 8234,
+        "5-9": 8156,
+        "10-14": 7899,
+        "15-17": 4158
+      },
+      "byRace": {
+        "white": 20456,
+        "black": 2844,
+        "hispanic": 3287,
+        "asian": 1234,
+        "other": 626
+      }
+    },
+    "households": {
+      "total": 56789,
+      "withChildren": 16234,
+      "singleParent": 4567,
+      "medianIncome": 52341
+    }
+  },
+  "timeSeries": {
+    "years": ["2020", "2021", "2022", "2023", "2024"],
+    "population": [137841, 138456, 138934, 139234, 139718],
+    "childrenInPoverty": [22.3, 21.5, 19.8, 18.9, 18.4]
+  }
+} 

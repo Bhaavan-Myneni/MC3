@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "source": "Bureau of Labor Statistics & U.S. Census Bureau",
+    "lastUpdated": "2024-12-15",
+    "coverage": "Monroe County Economic Indicators",
+    "methodology": "Current Population Survey & Business Employment Dynamics",
+    "qualityScore": 0.97
+  },
+  "economy": {
+    "employment": {
+      "totalJobs": 89456,
+      "unemploymentRate": 3.2,
+      "laborForceParticipation": 67.8,
+      "bySector": {
+        "education": 23456,
+        "healthcare": 18234,
+        "retail": 12567,
+        "manufacturing": 8934,
+        "technology": 6789
+      }
+    },
+    "income": {
+      "medianHousehold": 52341,
+      "medianFamily": 67234,
+      "perCapita": 28456,
+      "childPovertyRate": 18.4
+    },
+    "housing": {
+      "medianValue": 189567,
+      "medianRent": 967,
+      "ownershipRate": 61.3,
+      "housingCostBurden": 28.7
+    }
+  },
+  "timeSeries": {
+    "years": ["2020", "2021", "2022", "2023", "2024"],
+    "unemployment": [8.9, 4.2, 3.8, 3.4, 3.2],
+    "medianIncome": [48234, 49567, 50789, 51456, 52341],
+    "housingCosts": [867, 898, 923, 945, 967]
+  }
+} 

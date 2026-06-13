@@ -1,0 +1,42 @@
+{
+  "title": "Educational Excellence in Monroe County",
+  "description": "Monroe County demonstrates strong educational outcomes with high graduation rates and comprehensive school enrollment across all age groups.",
+  "data": {
+    "graduation_rates": {
+      "2014": 85.2,
+      "2015": 86.1,
+      "2016": 87.3,
+      "2017": 88.5,
+      "2018": 89.2,
+      "2019": 90.1,
+      "2020": 91.3,
+      "2021": 92.1,
+      "2022": 93.2,
+      "2023": 94.1,
+      "2024": 95.0
+    },
+    "enrollment_stats": {
+      "total_population_3plus": 52879,
+      "total_enrolled": 35124,
+      "enrollment_rate": 66.4
+    },
+    "grade_distribution": {
+      "Kindergarten": 1242,
+      "Elementary (1-4)": 4796,
+      "Middle School (5-8)": 5095,
+      "High School (9-12)": 4723
+    }
+  },
+  "insights": [
+    "High school graduation rates have improved from 85.2% to 95.0% over 10 years",
+    "Strong enrollment across all grade levels indicates good educational access",
+    "Comprehensive educational support systems are working effectively",
+    "Educational excellence creates pathways for youth success"
+  ],
+  "chart_type": "bar",
+  "chart_config": {
+    "x_axis": "Year",
+    "y_axis": "Graduation Rate (%)",
+    "color": "#27AE60"
+  }
+}

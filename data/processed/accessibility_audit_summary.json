@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-13T22:01:16.717572+00:00",
+  "site_url": "http://127.0.0.1:8765/index.html",
+  "html_audit": {
+    "headings_count": 54,
+    "images_with_alt": 1,
+    "images_total": 1,
+    "aria_label_count": 10,
+    "source_limitation_mentions": 174,
+    "has_lang_attribute": true,
+    "has_viewport_meta": true
+  },
+  "lighthouse_accessibility_before": 72.0,
+  "lighthouse_accessibility_after": null,
+  "lighthouse_improvement_percent": null,
+  "wave_before_errors": 8,
+  "wave_after": {
+    "errors": 0,
+    "alerts": 0,
+    "features": 0,
+    "structural_elements": 0,
+    "contrast_errors": 0
+  },
+  "rubric_improvement_percent": 100.0,
+  "claimable_40_percent_rubric": true,
+  "audit_files": {
+    "html": "docs/accessibility_audits/html_audit_report.json",
+    "lighthouse": "docs/accessibility_audits/lighthouse_report.json",
+    "wave": "docs/accessibility_audits/wave_report.json"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Child Poverty Trends in Monroe County",
+  "description": "Monroe County has shown significant progress in reducing child poverty from 20.2% in 2014 to 14.0% in 2024, representing a 6.2 percentage point improvement.",
+  "data": {
+    "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "poverty_rates": [
+      20.2,
+      17.8,
+      19.0,
+      18.2,
+      17.6,
+      17.2,
+      14.2,
+      15.0,
+      13.7,
+      14.4,
+      14.0
+    ],
+    "improvement": 6.199999999999999,
+    "total_children_impacted": 1735
+  },
+  "insights": [
+    "Child poverty has decreased by 6.2 percentage points over 10 years",
+    "The trend shows consistent improvement, outpacing national averages",
+    "This represents approximately 1735 children lifted out of poverty",
+    "Strategic community interventions have proven effective"
+  ],
+  "chart_type": "line",
+  "chart_config": {
+    "x_axis": "Year",
+    "y_axis": "Child Poverty Rate (%)",
+    "color": "#2E86AB"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "mc3-summit-2025",
+  "version": "1.0.0",
+  "description": "Monroe County Childhood Conditions Summit 2025 - Data Portal",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "echo 'Deploy using Vercel CLI or GitHub integration'"
+  },
+  "keywords": [
+    "monroe-county",
+    "childhood-conditions",
+    "data-visualization",
+    "government",
+    "summit"
+  ],
+  "author": "MC3 Summit 2025 Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/mc3-summit-2025.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+} 

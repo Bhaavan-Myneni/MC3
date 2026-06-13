@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-13T22:00:48.234149+00:00",
+  "sources_compared": [
+    "website/data/processed/poverty_trend.json",
+    "website/data/processed/dashboard_summary.json"
+  ],
+  "matches": [
+    "poverty_trend.json poverty_rates match ETL cleaned values for all years.",
+    "poverty_trend.json improvement matches ETL percentage_point_change."
+  ],
+  "warnings": [
+    {
+      "type": "summary_claim_mismatch",
+      "file": "dashboard_summary.json",
+      "dashboard_claim": "8.3 percentage point reduction in child poverty",
+      "etl_verified_value": 6.2,
+      "message": "dashboard_summary.json claims 8.3 percentage-point reduction, but ETL verified change from Children in Poverty.csv is 6.2 percentage points."
+    }
+  ],
+  "unverified_dashboard_fields": [
+    {
+      "field": "total_children_impacted",
+      "file": "poverty_trend.json",
+      "dashboard_value": 1735,
+      "status": "unverified",
+      "reason": "No child population denominator is available in Children in Poverty.csv to reproduce this count."
+    },
+    {
+      "field": "95% high school graduation rate",
+      "file": "dashboard_summary.json",
+      "status": "unverified",
+      "reason": "Not validated in Phase 3 poverty ETL pipeline."
+    },
+    {
+      "field": "3.9% unemployment rate",
+      "file": "dashboard_summary.json",
+      "status": "unverified",
+      "reason": "Not validated in Phase 3 poverty ETL pipeline."
+    }
+  ],
+  "etl_verified_metrics": {
+    "indicator_name": "children_in_poverty",
+    "value_type": "rate_proportion",
+    "county_fips": "18105",
+    "county_name": "Monroe County, IN",
+    "start_year": 2014,
+    "end_year": 2024,
+    "number_of_years": 10,
+    "start_value": 0.202000007033348,
+    "end_value": 0.1400000005960464,
+    "start_value_pct": 20.2,
+    "end_value_pct": 14.0,
+    "absolute_change": -0.062,
+    "percentage_point_change": 6.2,
+    "percent_change_relative": -30.69,
+    "min_value": 0.1369999945163726,
+    "max_value": 0.202000007033348,
+    "min_value_pct": 13.7,
+    "max_value_pct": 20.2,
+    "verified": true,
+    "calculated_at": "2026-06-13T22:00:48.234127+00:00",
+    "source_file": "data/raw/misc/dataset_archive/Children in Poverty.csv",
+    "notes": "Values are child poverty rates stored as proportions in the source CSV. percentage_point_change is calculated on the percent scale (start_value_pct - end_value_pct)."
+  }
+}

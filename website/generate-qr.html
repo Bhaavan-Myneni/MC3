@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Code - MC3 Summit 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Trebuchet MS', Verdana, Tahoma, Geneva, sans-serif;
+            background: linear-gradient(135deg, #E6F3FF 0%, #FFFFFF 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0, 51, 102, 0.15);
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #003366;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        
+        .subtitle {
+            color: #5A6C7D;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        
+        .input-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            color: #003366;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        
+        input[type="url"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #D1D5DA;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Trebuchet MS', Verdana, Tahoma, Geneva, sans-serif;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="url"]:focus {
+            outline: none;
+            border-color: #003366;
+        }
+        
+        .btn {
+            background: #003366;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 25px;
+            transition: background 0.3s;
+            font-family: 'Trebuchet MS', Verdana, Tahoma, Geneva, sans-serif;
+        }
+        
+        .btn:hover {
+            background: #004080;
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .qr-container {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #F8F9FA;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .qr-container.active {
+            display: block;
+        }
+        
+        #qrcode {
+            display: inline-block;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .download-btn {
+            background: #FFB500;
+            color: #003366;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            font-family: 'Trebuchet MS', Verdana, Tahoma, Geneva, sans-serif;
+        }
+        
+        .download-btn:hover {
+            background: #e6a200;
+        }
+        
+        .instructions {
+            background: #E6F3FF;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #003366;
+        }
+        
+        .instructions h3 {
+            color: #003366;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+            color: #5A6C7D;
+            line-height: 1.8;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        
+        .example-url {
+            background: #F8F9FA;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #003366;
+            word-break: break-all;
+        }
+        
+        .warning {
+            background: #FFF3CD;
+            border: 1px solid #FFC107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: #856404;
+        }
+        
+        .warning strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+    <!-- QR Code Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 Generate QR Code</h1>
+        <p class="subtitle">Create a QR code for your MC3 Summit 2025 website</p>
+        
+        <div class="warning">
+            <strong>⚠️ Important:</strong>
+            Your website must be deployed online first (using Netlify, GitHub Pages, or Vercel) to get a public URL. 
+            Local URLs (like localhost:8000) won't work for others to scan.
+        </div>
+        
+        <div class="input-group">
+            <label for="website-url">Enter your website URL:</label>
+            <input 
+                type="url" 
+                id="website-url" 
+                placeholder="https://your-website.netlify.app"
+                value=""
+            />
+        </div>
+        
+        <button class="btn" onclick="generateQR()">Generate QR Code</button>
+        
+        <div class="qr-container" id="qr-container">
+            <div id="qrcode"></div>
+            <button class="download-btn" onclick="downloadQR()">Download QR Code</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 How to Use:</h3>
+            <ol>
+                <li><strong>Deploy your website</strong> first using Netlify Drop, GitHub Pages, or Vercel</li>
+                <li><strong>Copy your website URL</strong> (e.g., https://your-site.netlify.app)</li>
+                <li><strong>Paste the URL</strong> in the field above</li>
+                <li><strong>Click "Generate QR Code"</strong></li>
+                <li><strong>Download the QR code</strong> and share it with others</li>
+                <li><strong>Print or share</strong> the QR code - when scanned, it will open your website!</li>
+            </ol>
+            
+            <div class="example-url">
+                <strong>Example URLs:</strong><br>
+                • https://mc3-summit-2025.netlify.app<br>
+                • https://yourusername.github.io/mc3-summit-2025/<br>
+                • https://mc3-summit-2025.vercel.app
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let qrCodeDataUrl = '';
+        
+        function generateQR() {
+            const url = document.getElementById('website-url').value.trim();
+            
+            if (!url) {
+                alert('Please enter a website URL');
+                return;
+            }
+            
+            // Validate URL
+            try {
+                new URL(url);
+            } catch (e) {
+                alert('Please enter a valid URL (must start with http:// or https://)');
+                return;
+            }
+            
+            // Clear previous QR code
+            document.getElementById('qrcode').innerHTML = '';
+            
+            // Generate QR code
+            QRCode.toCanvas(document.getElementById('qrcode'), url, {
+                width: 300,
+                margin: 2,
+                color: {
+                    dark: '#003366',
+                    light: '#FFFFFF'
+                }
+            }, function (error) {
+                if (error) {
+                    console.error(error);
+                    alert('Error generating QR code. Please try again.');
+                    return;
+                }
+                
+                // Get the canvas and convert to data URL
+                const canvas = document.querySelector('#qrcode canvas');
+                qrCodeDataUrl = canvas.toDataURL('image/png');
+                
+                // Show QR code container
+                document.getElementById('qr-container').classList.add('active');
+            });
+        }
+        
+        function downloadQR() {
+            if (!qrCodeDataUrl) {
+                alert('Please generate a QR code first');
+                return;
+            }
+            
+            // Create download link
+            const link = document.createElement('a');
+            link.download = 'mc3-summit-2025-qrcode.png';
+            link.href = qrCodeDataUrl;
+            link.click();
+        }
+        
+        // Allow Enter key to generate QR code
+        document.getElementById('website-url').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                generateQR();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

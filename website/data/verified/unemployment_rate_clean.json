@@ -1,0 +1,80 @@
+[
+  {
+    "year":2020,
+    "indicator_value":6.3,
+    "indicator_unit":"percent",
+    "data_topic":"economy",
+    "indicator_name":"county_unemployment_rate",
+    "source_file":"data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu20.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu21.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu22.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu23.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu24.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu25.xlsx",
+    "etl_processed_at":"2026-06-13T22:00:48.953835+00:00",
+    "value_type":"rate_percent",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2021,
+    "indicator_value":6.4,
+    "indicator_unit":"percent",
+    "data_topic":"economy",
+    "indicator_name":"county_unemployment_rate",
+    "source_file":"data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu20.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu21.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu22.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu23.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu24.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu25.xlsx",
+    "etl_processed_at":"2026-06-13T22:00:48.953835+00:00",
+    "value_type":"rate_percent",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2022,
+    "indicator_value":5.4,
+    "indicator_unit":"percent",
+    "data_topic":"economy",
+    "indicator_name":"county_unemployment_rate",
+    "source_file":"data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu20.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu21.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu22.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu23.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu24.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu25.xlsx",
+    "etl_processed_at":"2026-06-13T22:00:48.953835+00:00",
+    "value_type":"rate_percent",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2023,
+    "indicator_value":6.4,
+    "indicator_unit":"percent",
+    "data_topic":"economy",
+    "indicator_name":"county_unemployment_rate",
+    "source_file":"data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu20.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu21.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu22.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu23.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu24.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu25.xlsx",
+    "etl_processed_at":"2026-06-13T22:00:48.953835+00:00",
+    "value_type":"rate_percent",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2024,
+    "indicator_value":6.4,
+    "indicator_unit":"percent",
+    "data_topic":"economy",
+    "indicator_name":"county_unemployment_rate",
+    "source_file":"data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu20.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu21.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu22.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu23.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu24.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu25.xlsx",
+    "etl_processed_at":"2026-06-13T22:00:48.953835+00:00",
+    "value_type":"rate_percent",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2025,
+    "indicator_value":5.8,
+    "indicator_unit":"percent",
+    "data_topic":"economy",
+    "indicator_name":"county_unemployment_rate",
+    "source_file":"data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu20.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu21.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu22.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu23.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu24.xlsx; data\/raw\/economy\/reference_repo\/Unemployment_Estimates\/STATSIN_asu25.xlsx",
+    "etl_processed_at":"2026-06-13T22:00:48.953835+00:00",
+    "value_type":"rate_percent",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  }
+]

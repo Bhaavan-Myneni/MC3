@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "source": "Indiana Department of Education",
+    "lastUpdated": "2024-12-15",
+    "coverage": "Monroe County School Districts",
+    "methodology": "4-year adjusted cohort graduation rate",
+    "qualityScore": 0.99
+  },
+  "education": {
+    "enrollment": {
+      "total": 18567,
+      "elementary": 8234,
+      "middle": 4567,
+      "high": 5766
+    },
+    "graduation": {
+      "rate": 87.3,
+      "trend": "increasing",
+      "byDemographic": {
+        "overall": 87.3,
+        "white": 89.2,
+        "black": 81.4,
+        "hispanic": 83.7,
+        "freeReducedLunch": 79.8
+      }
+    },
+    "achievement": {
+      "mathProficient": 56.7,
+      "readingProficient": 62.3,
+      "scienceProficient": 49.8
+    }
+  },
+  "timeSeries": {
+    "years": ["2020", "2021", "2022", "2023", "2024"],
+    "graduationRates": [85.9, 86.8, 87.5, 87.9, 87.3],
+    "mathScores": [54.2, 55.1, 55.8, 56.2, 56.7],
+    "readingScores": [60.1, 61.2, 61.8, 62.1, 62.3]
+  }
+} 

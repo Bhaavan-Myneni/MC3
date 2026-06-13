@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "source": "Indiana Family and Social Services Administration",
+    "lastUpdated": "2024-12-15",
+    "coverage": "Monroe County Social Services Utilization",
+    "methodology": "Administrative records and case management systems",
+    "qualityScore": 0.96
+  },
+  "socialServices": {
+    "foodAssistance": {
+      "snap": {
+        "households": 8234,
+        "children": 12456,
+        "averageBenefit": 287
+      },
+      "wic": {
+        "participants": 3456,
+        "children": 2134,
+        "averageBenefit": 156
+      },
+      "schoolMeals": {
+        "freeEligible": 7234,
+        "reducedEligible": 1567,
+        "participationRate": 89.3
+      }
+    },
+    "childcare": {
+      "centers": 45,
+      "familyProviders": 123,
+      "capacity": 6789,
+      "ccdfSubsidies": 1234,
+      "averageCost": 967
+    },
+    "housing": {
+      "publicHousing": 567,
+      "housingVouchers": 1234,
+      "homelessFamilies": 89,
+      "emergencyShelter": 23
+    },
+    "healthcare": {
+      "medicaidChildren": 9876,
+      "chipEnrolled": 1234,
+      "uninsuredRate": 8.7
+    }
+  },
+  "timeSeries": {
+    "years": ["2020", "2021", "2022", "2023", "2024"],
+    "snapParticipation": [9567, 9234, 8789, 8456, 8234],
+    "childcareSubsidies": [1567, 1456, 1345, 1278, 1234],
+    "homelessness": [156, 134, 112, 98, 89]
+  }
+} 

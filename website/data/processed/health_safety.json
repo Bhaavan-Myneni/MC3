@@ -1,0 +1,38 @@
+{
+  "title": "Health & Safety Indicators",
+  "description": "Monroe County demonstrates strong health and safety outcomes for children through comprehensive healthcare access and community safety initiatives.",
+  "data": {
+    "health_metrics": {
+      "Mental Health Access": 85,
+      "Child Safety Rating": 92,
+      "Healthcare Coverage": 88,
+      "Community Safety": 90,
+      "Preventive Care": 87,
+      "Emergency Response": 94
+    },
+    "safety_indicators": {
+      "Child Abuse Prevention": 89,
+      "School Safety": 93,
+      "Community Programs": 86,
+      "Crisis Intervention": 91
+    },
+    "health_outcomes": {
+      "Infant Mortality Rate": 4.2,
+      "Childhood Vaccination": 96.8,
+      "Dental Care Access": 78.5,
+      "Mental Health Services": 82.3
+    }
+  },
+  "insights": [
+    "Strong healthcare coverage at 88% ensures children receive necessary care",
+    "High community safety rating of 90% creates secure environments",
+    "Comprehensive mental health services support child well-being",
+    "Preventive care programs promote long-term health outcomes"
+  ],
+  "chart_type": "horizontal_bar",
+  "chart_config": {
+    "x_axis": "Score (0-100)",
+    "y_axis": "Health & Safety Category",
+    "color": "#34495E"
+  }
+}

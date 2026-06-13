@@ -1,0 +1,9 @@
+{
+  "categories_scored": 10,
+  "before_total_score": 19.0,
+  "after_total_score": 38.0,
+  "max_possible_score": 50,
+  "accessibility_improvement_percent": 100.0,
+  "claimable_40_percent": true,
+  "rubric_file": "docs/accessibility_scoring_rubric.csv"
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 85" width="380" height="85">
+  <!-- YOUTH text - large, bold, orange -->
+  <text x="190" y="35" font-family="'Trebuchet MS', Verdana, Arial, sans-serif" font-size="38" font-weight="bold" fill="#FF6600" text-anchor="middle">YOUTH</text>
+  
+  <!-- Blue square left -->
+  <rect x="98" y="42" width="9" height="9" fill="#003366"/>
+  
+  <!-- SERVICES BUREAU text - smaller, orange -->
+  <text x="190" y="57" font-family="'Trebuchet MS', Verdana, Arial, sans-serif" font-size="18" font-weight="600" fill="#FF6600" text-anchor="middle">SERVICES BUREAU</text>
+  
+  <!-- Blue square right -->
+  <rect x="273" y="42" width="9" height="9" fill="#003366"/>
+  
+  <!-- of Monroe County text - smaller, white for visibility on dark header -->
+  <text x="190" y="75" font-family="'Trebuchet MS', Verdana, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">of Monroe County</text>
+</svg>
+

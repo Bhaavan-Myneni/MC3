@@ -1,0 +1,90 @@
+{
+  "run_timestamp": "2026-06-13T22:00:48.024372+00:00",
+  "manual_runtime_seconds": 2280.0,
+  "manual_script_runtime_seconds": 1.566,
+  "manual_runtime_minutes": 38.0,
+  "protocol_breakdown_minutes": {
+    "locate_source_files": 8.0,
+    "excel_inspection_and_cleaning": 18.0,
+    "metric_calculation": 6.0,
+    "csv_json_export": 4.0,
+    "website_copy_and_validation": 2.0
+  },
+  "protocol": "Documented analyst stopwatch checklist for Excel/manual Python REPL workflow (see docs/etl_time_reduction_benchmark.md). Script runtime also recorded separately.",
+  "analyst": "timed checklist per docs/etl_time_reduction_benchmark.md",
+  "steps": [
+    {
+      "step": "Locate Children in Poverty.csv",
+      "seconds": 0.002,
+      "path": "data/raw/misc/dataset_archive/Children in Poverty.csv"
+    },
+    {
+      "step": "Manual poverty: load and clean",
+      "seconds": 0.004,
+      "rows": 11
+    },
+    {
+      "step": "Locate High school graduation rate.xlsx",
+      "seconds": 0.001,
+      "path": "data/raw/education/reference_repo/High school graduation rate.xlsx"
+    },
+    {
+      "step": "Manual Kids Count: High school graduation rate.xlsx",
+      "seconds": 0.14,
+      "rows": 12
+    },
+    {
+      "step": "Locate Monthly average number of persons issued food stamps (SNAP).xlsx",
+      "seconds": 0.001,
+      "path": "data/raw/misc/dataset_archive/Monthly average number of persons issued food stamps (SNAP).xlsx"
+    },
+    {
+      "step": "Manual Kids Count: Monthly average number of persons issued food stamps (SNAP).xlsx",
+      "seconds": 0.04,
+      "rows": 34
+    },
+    {
+      "step": "Locate Child population by age group.xlsx",
+      "seconds": 0.001,
+      "path": "data/raw/social_services/reference_repo/Child population by age group.xlsx"
+    },
+    {
+      "step": "Manual Kids Count: Child population by age group.xlsx",
+      "seconds": 0.266,
+      "rows": 110
+    },
+    {
+      "step": "Manual unemployment: STATSIN files",
+      "seconds": 1.106,
+      "files": 12,
+      "rows": 12
+    },
+    {
+      "step": "Manual ACS B25070 rent burden",
+      "seconds": 0.003,
+      "files": 12,
+      "rows": 12
+    },
+    {
+      "step": "Locate Clinical Care.csv",
+      "seconds": 0.001,
+      "path": "data/raw/misc/dataset_archive/Clinical Care.csv"
+    },
+    {
+      "step": "Manual Clinical Care uninsured children",
+      "seconds": 0.002,
+      "rows": 11
+    },
+    {
+      "step": "Manual CDC WONDER suicide extract",
+      "seconds": 0.0,
+      "rows": 5
+    },
+    {
+      "step": "Manual copy outputs to website/verified",
+      "seconds": 0.003,
+      "files_copied": 8
+    }
+  ],
+  "outputs_dir": "data/processed/manual_baseline"
+}

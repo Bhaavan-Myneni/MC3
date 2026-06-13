@@ -1,0 +1,67 @@
+[
+  {
+    "year":2019,
+    "indicator_value":19,
+    "indicator_unit":"count",
+    "data_topic":"cdc_wonder",
+    "indicator_name":"suicide_deaths_county_residence",
+    "source_file":"data\/raw\/public_health\/cdc_wonder\/monroe_county_suicide_deaths_wonder_export.txt",
+    "etl_processed_at":"2026-06-13T22:00:49.378296+00:00",
+    "value_type":"mortality_count",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2020,
+    "indicator_value":17,
+    "indicator_unit":"count",
+    "data_topic":"cdc_wonder",
+    "indicator_name":"suicide_deaths_county_residence",
+    "source_file":"data\/raw\/public_health\/cdc_wonder\/monroe_county_suicide_deaths_wonder_export.txt",
+    "etl_processed_at":"2026-06-13T22:00:49.378296+00:00",
+    "value_type":"mortality_count",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2021,
+    "indicator_value":17,
+    "indicator_unit":"count",
+    "data_topic":"cdc_wonder",
+    "indicator_name":"suicide_deaths_county_residence",
+    "source_file":"data\/raw\/public_health\/cdc_wonder\/monroe_county_suicide_deaths_wonder_export.txt",
+    "etl_processed_at":"2026-06-13T22:00:49.378296+00:00",
+    "value_type":"mortality_count",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2022,
+    "indicator_value":18,
+    "indicator_unit":"count",
+    "data_topic":"cdc_wonder",
+    "indicator_name":"suicide_deaths_county_residence",
+    "source_file":"data\/raw\/public_health\/cdc_wonder\/monroe_county_suicide_deaths_wonder_export.txt",
+    "etl_processed_at":"2026-06-13T22:00:49.378296+00:00",
+    "value_type":"mortality_count",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  },
+  {
+    "year":2023,
+    "indicator_value":20,
+    "indicator_unit":"count",
+    "data_topic":"cdc_wonder",
+    "indicator_name":"suicide_deaths_county_residence",
+    "source_file":"data\/raw\/public_health\/cdc_wonder\/monroe_county_suicide_deaths_wonder_export.txt",
+    "etl_processed_at":"2026-06-13T22:00:49.378296+00:00",
+    "value_type":"mortality_count",
+    "verified":true,
+    "county_fips":"18105",
+    "county_name":"Monroe County"
+  }
+]

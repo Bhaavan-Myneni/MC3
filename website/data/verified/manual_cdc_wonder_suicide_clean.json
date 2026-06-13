@@ -1,0 +1,42 @@
+[
+  {
+    "Year":2019,
+    "County":"Monroe County, IN",
+    "County Code":18105,
+    "Deaths":19,
+    "Population":null,
+    "Crude Rate":null
+  },
+  {
+    "Year":2020,
+    "County":"Monroe County, IN",
+    "County Code":18105,
+    "Deaths":17,
+    "Population":null,
+    "Crude Rate":null
+  },
+  {
+    "Year":2021,
+    "County":"Monroe County, IN",
+    "County Code":18105,
+    "Deaths":17,
+    "Population":null,
+    "Crude Rate":null
+  },
+  {
+    "Year":2022,
+    "County":"Monroe County, IN",
+    "County Code":18105,
+    "Deaths":18,
+    "Population":null,
+    "Crude Rate":null
+  },
+  {
+    "Year":2023,
+    "County":"Monroe County, IN",
+    "County Code":18105,
+    "Deaths":20,
+    "Population":null,
+    "Crude Rate":null
+  }
+]

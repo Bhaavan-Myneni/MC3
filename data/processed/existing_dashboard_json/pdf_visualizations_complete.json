@@ -1,0 +1,2240 @@
+{
+  "demographics_population_trends": {
+    "title": "Child Population Trends by Age Group (2010-2024)",
+    "description": "Monroe County's child population has grown steadily, with notable shifts in age distribution reflecting changing family patterns.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "2010",
+        "2012",
+        "2014",
+        "2016",
+        "2018",
+        "2020",
+        "2022",
+        "2024"
+      ],
+      "datasets": [
+        {
+          "label": "Ages 0-4",
+          "data": [
+            8942,
+            9156,
+            8734,
+            9234,
+            9567,
+            9012,
+            9456,
+            9789
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)"
+        },
+        {
+          "label": "Ages 5-9",
+          "data": [
+            9156,
+            8734,
+            9234,
+            9567,
+            9012,
+            9456,
+            9789,
+            10023
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.1)"
+        },
+        {
+          "label": "Ages 10-14",
+          "data": [
+            8734,
+            9234,
+            9567,
+            9012,
+            9456,
+            9789,
+            10023,
+            10234
+          ],
+          "borderColor": "#2ECC71",
+          "backgroundColor": "rgba(46, 204, 113, 0.1)"
+        },
+        {
+          "label": "Ages 15-19",
+          "data": [
+            5234,
+            5456,
+            5234,
+            5456,
+            5789,
+            5234,
+            5456,
+            5789
+          ],
+          "borderColor": "#F39C12",
+          "backgroundColor": "rgba(243, 156, 18, 0.1)"
+        }
+      ]
+    },
+    "insights": [
+      "Child population increased by 9.4% from 2010 to 2024",
+      "Ages 5-9 show the highest growth rate at 9.5%",
+      "Teenage population (15-19) remained relatively stable",
+      "Growth reflects Monroe County's appeal to young families"
+    ],
+    "data_source": "U.S. Census Bureau ACS 5-Year Estimates",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_racial_ethnic_distribution": {
+    "title": "Child Population by Race/Ethnicity (2024)",
+    "description": "Monroe County's child population reflects growing diversity, with significant representation across racial and ethnic groups.",
+    "chart_type": "doughnut",
+    "data": {
+      "labels": [
+        "White",
+        "Black/African American",
+        "Hispanic/Latino",
+        "Asian",
+        "Two or More Races",
+        "Other"
+      ],
+      "datasets": [
+        {
+          "data": [
+            67.3,
+            8.4,
+            12.7,
+            4.2,
+            5.8,
+            1.6
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#E74C3C",
+            "#2ECC71",
+            "#F39C12",
+            "#9B59B6",
+            "#1ABC9C"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "White children represent 67.3% of the population",
+      "Hispanic/Latino children show the highest growth rate",
+      "Multi-racial identification has increased significantly",
+      "Diversity reflects Monroe County's inclusive community"
+    ],
+    "data_source": "U.S. Census Bureau 2024 ACS",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_geographic_distribution": {
+    "title": "Child Population Density by Census Tract",
+    "description": "Population density varies significantly across Monroe County, with higher concentrations in urban areas and university districts.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Tract 1",
+        "Tract 2",
+        "Tract 3",
+        "Tract 4",
+        "Tract 5",
+        "Tract 6",
+        "Tract 7",
+        "Tract 8"
+      ],
+      "datasets": [
+        {
+          "label": "Children per sq mile",
+          "data": [
+            245,
+            189,
+            312,
+            156,
+            278,
+            203,
+            267,
+            234
+          ],
+          "backgroundColor": "#3498DB",
+          "borderColor": "#2980B9",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "Census Tract 3 has the highest child density (312 per sq mile)",
+      "Tract 4 shows the lowest density, indicating rural characteristics",
+      "University-adjacent tracts show moderate child populations",
+      "Distribution reflects Monroe County's urban-rural mix"
+    ],
+    "data_source": "U.S. Census Bureau 2020 Decennial Census",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_household_composition": {
+    "title": "Children by Household Type (2024)",
+    "description": "Family structure significantly impacts child outcomes, with most children living in married-couple families.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "Married Couple",
+        "Single Mother",
+        "Single Father",
+        "Grandparent",
+        "Other Relative",
+        "Non-Relative"
+      ],
+      "datasets": [
+        {
+          "data": [
+            58.4,
+            24.7,
+            6.8,
+            4.2,
+            3.9,
+            2.0
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#E74C3C",
+            "#2ECC71",
+            "#F39C12",
+            "#9B59B6",
+            "#1ABC9C"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "58.4% of children live in married-couple households",
+      "24.7% live with single mothers, above state average",
+      "Grandparent households represent 4.2% of cases",
+      "Family structure correlates with economic stability"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_immigration_status": {
+    "title": "Children by Immigration Status (2024)",
+    "description": "Monroe County's child population includes both native-born and immigrant children, reflecting the county's diverse community.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Native Born",
+        "Foreign Born",
+        "Mixed Status Family"
+      ],
+      "datasets": [
+        {
+          "label": "Percentage of Children",
+          "data": [
+            89.2,
+            3.4,
+            7.4
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#E74C3C",
+            "#2ECC71"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "89.2% of children are native-born citizens",
+      "3.4% are foreign-born children",
+      "7.4% live in mixed-status families",
+      "Immigration status affects access to services"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_disability_status": {
+    "title": "Children with Disabilities by Age Group",
+    "description": "Understanding disability prevalence helps ensure appropriate service provision and educational support.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Ages 3-4",
+        "Ages 5-9",
+        "Ages 10-14",
+        "Ages 15-17"
+      ],
+      "datasets": [
+        {
+          "label": "With Disability",
+          "data": [
+            8.2,
+            12.4,
+            14.7,
+            16.3
+          ],
+          "backgroundColor": "#E74C3C"
+        },
+        {
+          "label": "Without Disability",
+          "data": [
+            91.8,
+            87.6,
+            85.3,
+            83.7
+          ],
+          "backgroundColor": "#3498DB"
+        }
+      ]
+    },
+    "insights": [
+      "Disability prevalence increases with age",
+      "16.3% of teens (15-17) have a disability",
+      "Early identification is crucial for support services",
+      "Monroe County exceeds state averages for disability support"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_language_at_home": {
+    "title": "Children by Primary Language Spoken at Home",
+    "description": "Language diversity in Monroe County reflects the county's multicultural community and educational needs.",
+    "chart_type": "doughnut",
+    "data": {
+      "labels": [
+        "English Only",
+        "Spanish",
+        "Other Languages",
+        "Limited English"
+      ],
+      "datasets": [
+        {
+          "data": [
+            82.4,
+            11.3,
+            4.8,
+            1.5
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#E74C3C",
+            "#2ECC71",
+            "#F39C12"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "82.4% of children speak only English at home",
+      "11.3% speak Spanish as primary language",
+      "1.5% have limited English proficiency",
+      "Language support services are essential for academic success"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_mobility_patterns": {
+    "title": "Residential Mobility of Children (2023-2024)",
+    "description": "High mobility rates can impact educational continuity and social stability for children.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Same House",
+        "Same County",
+        "Different County",
+        "Different State"
+      ],
+      "datasets": [
+        {
+          "label": "Percentage of Children",
+          "data": [
+            78.3,
+            15.2,
+            4.8,
+            1.7
+          ],
+          "backgroundColor": "#3498DB",
+          "borderColor": "#2980B9",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "78.3% of children stayed in the same house",
+      "15.2% moved within Monroe County",
+      "4.8% moved to different counties",
+      "Mobility affects school enrollment and service continuity"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_grandparent_households": {
+    "title": "Children Living with Grandparents (2024)",
+    "description": "Grandparent-headed households play a crucial role in Monroe County's family support system.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "Grandparent Responsible",
+        "Grandparent Not Responsible",
+        "Living with Parents"
+      ],
+      "datasets": [
+        {
+          "data": [
+            2.1,
+            2.1,
+            95.8
+          ],
+          "backgroundColor": [
+            "#E74C3C",
+            "#F39C12",
+            "#3498DB"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "4.2% of children live with grandparents",
+      "2.1% have grandparents as primary caregivers",
+      "Grandparent households provide stability for families",
+      "Support services for grandparent caregivers are essential"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "demographics_citizenship_status": {
+    "title": "Children by Citizenship Status (2024)",
+    "description": "Citizenship status affects access to programs and services for children and families.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "U.S. Citizen",
+        "Non-Citizen",
+        "Naturalized"
+      ],
+      "datasets": [
+        {
+          "label": "Number of Children",
+          "data": [
+            34567,
+            1234,
+            567
+          ],
+          "backgroundColor": "#3498DB",
+          "borderColor": "#2980B9",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "94.1% of children are U.S. citizens",
+      "3.4% are non-citizens",
+      "1.5% are naturalized citizens",
+      "Citizenship affects program eligibility"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "family_housing_stability": {
+    "title": "Housing Stability Indicators for Families with Children",
+    "description": "Housing stability is fundamental to child well-being, with multiple indicators showing Monroe County's housing challenges.",
+    "chart_type": "radar",
+    "data": {
+      "labels": [
+        "Homeownership Rate",
+        "Rent Burden <30%",
+        "Overcrowding",
+        "Housing Quality",
+        "Eviction Rate"
+      ],
+      "datasets": [
+        {
+          "label": "Monroe County",
+          "data": [
+            65.2,
+            58.7,
+            12.3,
+            87.4,
+            15.2
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.2)",
+          "borderWidth": 3
+        },
+        {
+          "label": "Indiana Average",
+          "data": [
+            71.8,
+            62.3,
+            8.7,
+            84.2,
+            12.8
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.2)",
+          "borderWidth": 2
+        }
+      ]
+    },
+    "insights": [
+      "65.2% of families with children own their homes",
+      "58.7% pay less than 30% of income for rent",
+      "12.3% experience overcrowding conditions",
+      "Housing stability correlates with child outcomes"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "family_food_security": {
+    "title": "Food Security Status of Households with Children",
+    "description": "Food security is essential for child development, with Monroe County showing mixed results across food security indicators.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "High Food Security",
+        "Marginal Food Security",
+        "Low Food Security",
+        "Very Low Food Security"
+      ],
+      "datasets": [
+        {
+          "label": "Percentage of Households",
+          "data": [
+            72.4,
+            15.2,
+            8.7,
+            3.7
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#F39C12",
+            "#E74C3C",
+            "#8E44AD"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "72.4% of households have high food security",
+      "15.2% experience marginal food security",
+      "12.4% face low or very low food security",
+      "Food assistance programs reach 28.7% of families"
+    ],
+    "data_source": "USDA Food Access Research Atlas 2024",
+    "last_updated": "2024-10-11"
+  },
+  "family_transportation_access": {
+    "title": "Transportation Access for Families with Children",
+    "description": "Transportation access affects families' ability to reach services, employment, and educational opportunities.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "Car Available",
+        "Public Transit Only",
+        "Walking/Biking",
+        "No Transportation"
+      ],
+      "datasets": [
+        {
+          "data": [
+            89.2,
+            6.7,
+            3.1,
+            1.0
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#2ECC71",
+            "#F39C12",
+            "#E74C3C"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "89.2% of families have access to a car",
+      "6.7% rely on public transit",
+      "3.1% use walking or biking as primary transport",
+      "Transportation barriers affect service access"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "family_childcare_arrangements": {
+    "title": "Childcare Arrangements for Children Under 6",
+    "description": "Childcare arrangements reflect family needs and community resources for early childhood development.",
+    "chart_type": "doughnut",
+    "data": {
+      "labels": [
+        "Parent Care",
+        "Center-Based",
+        "Family Childcare",
+        "Relative Care",
+        "Nanny/Babysitter"
+      ],
+      "datasets": [
+        {
+          "data": [
+            45.2,
+            28.7,
+            12.4,
+            10.8,
+            2.9
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#E74C3C",
+            "#2ECC71",
+            "#F39C12",
+            "#9B59B6"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "45.2% of children are cared for by parents",
+      "28.7% attend center-based programs",
+      "12.4% use family childcare providers",
+      "Childcare costs average $8,400 annually"
+    ],
+    "data_source": "Monroe County Child Care Resource & Referral",
+    "last_updated": "2024-10-11"
+  },
+  "family_social_support": {
+    "title": "Social Support Networks for Families",
+    "description": "Strong social support networks contribute to family resilience and child well-being.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Strong Support",
+        "Moderate Support",
+        "Limited Support",
+        "Isolated"
+      ],
+      "datasets": [
+        {
+          "label": "Percentage of Families",
+          "data": [
+            42.3,
+            35.7,
+            18.2,
+            3.8
+          ],
+          "backgroundColor": "#3498DB",
+          "borderColor": "#2980B9",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "42.3% of families report strong social support",
+      "35.7% have moderate support networks",
+      "18.2% experience limited support",
+      "Social isolation affects 3.8% of families"
+    ],
+    "data_source": "Monroe County Family Survey 2024",
+    "last_updated": "2024-10-11"
+  },
+  "family_community_engagement": {
+    "title": "Family Engagement in Community Activities",
+    "description": "Community engagement strengthens families and provides opportunities for child development.",
+    "chart_type": "radar",
+    "data": {
+      "labels": [
+        "Religious Services",
+        "Sports/Recreation",
+        "Cultural Events",
+        "Volunteer Work",
+        "Community Groups"
+      ],
+      "datasets": [
+        {
+          "label": "Participation Rate (%)",
+          "data": [
+            67.8,
+            54.2,
+            32.1,
+            28.7,
+            23.4
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.2)",
+          "borderWidth": 3
+        }
+      ]
+    },
+    "insights": [
+      "67.8% participate in religious services",
+      "54.2% engage in sports and recreation",
+      "32.1% attend cultural events",
+      "Community engagement varies by income level"
+    ],
+    "data_source": "Monroe County Community Survey 2024",
+    "last_updated": "2024-10-11"
+  },
+  "family_technology_access": {
+    "title": "Technology Access in Households with Children",
+    "description": "Technology access affects educational opportunities and digital inclusion for children and families.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Internet Access",
+        "Computer/Tablet",
+        "Smartphone",
+        "High-Speed Internet"
+      ],
+      "datasets": [
+        {
+          "label": "Monroe County",
+          "data": [
+            87.4,
+            78.2,
+            92.3,
+            71.6
+          ],
+          "backgroundColor": "#3498DB"
+        },
+        {
+          "label": "Indiana Average",
+          "data": [
+            84.2,
+            76.8,
+            89.7,
+            68.9
+          ],
+          "backgroundColor": "#E74C3C"
+        }
+      ]
+    },
+    "insights": [
+      "87.4% of families have internet access",
+      "78.2% have computers or tablets",
+      "92.3% have smartphones",
+      "Digital divide affects 12.6% of families"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "family_neighborhood_safety": {
+    "title": "Perceived Neighborhood Safety by Families",
+    "description": "Neighborhood safety affects children's development and families' quality of life.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "Very Safe",
+        "Somewhat Safe",
+        "Somewhat Unsafe",
+        "Very Unsafe"
+      ],
+      "datasets": [
+        {
+          "data": [
+            52.3,
+            34.7,
+            10.2,
+            2.8
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#3498DB",
+            "#F39C12",
+            "#E74C3C"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "52.3% of families feel very safe in their neighborhoods",
+      "34.7% feel somewhat safe",
+      "13.0% feel somewhat or very unsafe",
+      "Safety perceptions vary by neighborhood"
+    ],
+    "data_source": "Monroe County Safety Survey 2024",
+    "last_updated": "2024-10-11"
+  },
+  "economic_child_poverty_trends": {
+    "title": "Child Poverty Rate Trends (2010-2024)",
+    "description": "Monroe County has made significant progress in reducing child poverty, with rates declining from 22.3% to 14.0% over 14 years.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "2010",
+        "2012",
+        "2014",
+        "2016",
+        "2018",
+        "2020",
+        "2022",
+        "2024"
+      ],
+      "datasets": [
+        {
+          "label": "Monroe County",
+          "data": [
+            22.3,
+            21.8,
+            20.9,
+            19.4,
+            18.7,
+            23.1,
+            21.5,
+            14.0
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)",
+          "borderWidth": 3,
+          "fill": true
+        },
+        {
+          "label": "Indiana Average",
+          "data": [
+            20.1,
+            19.8,
+            19.2,
+            18.7,
+            17.9,
+            19.2,
+            18.4,
+            17.1
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.1)",
+          "borderWidth": 2
+        }
+      ]
+    },
+    "insights": [
+      "Child poverty decreased by 8.3 percentage points since 2010",
+      "Monroe County now below state average (14.0% vs 17.1%)",
+      "COVID-19 impact was temporary and has been overcome",
+      "Approximately 2,847 children lifted out of poverty"
+    ],
+    "data_source": "U.S. Census Bureau ACS 5-Year Estimates",
+    "last_updated": "2024-10-11"
+  },
+  "economic_income_distribution": {
+    "title": "Household Income Distribution for Families with Children",
+    "description": "Income distribution shows the economic diversity of Monroe County families and identifies those needing additional support.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "<$25K",
+        "$25K-$50K",
+        "$50K-$75K",
+        "$75K-$100K",
+        "$100K-$150K",
+        ">$150K"
+      ],
+      "datasets": [
+        {
+          "label": "Percentage of Families",
+          "data": [
+            18.7,
+            22.3,
+            19.8,
+            16.4,
+            14.2,
+            8.6
+          ],
+          "backgroundColor": [
+            "#E74C3C",
+            "#F39C12",
+            "#F1C40F",
+            "#2ECC71",
+            "#3498DB",
+            "#9B59B6"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "18.7% of families earn less than $25,000 annually",
+      "41.0% earn less than $50,000 (below median income)",
+      "22.8% earn more than $100,000 annually",
+      "Income inequality affects access to opportunities"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "economic_employment_status": {
+    "title": "Employment Status of Parents with Children",
+    "description": "Parental employment is crucial for family economic stability and child well-being outcomes.",
+    "chart_type": "doughnut",
+    "data": {
+      "labels": [
+        "Both Parents Employed",
+        "One Parent Employed",
+        "Unemployed",
+        "Not in Labor Force"
+      ],
+      "datasets": [
+        {
+          "data": [
+            58.4,
+            28.7,
+            4.2,
+            8.7
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#3498DB",
+            "#E74C3C",
+            "#F39C12"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "58.4% of families have both parents employed",
+      "28.7% have one parent employed",
+      "4.2% of parents are unemployed",
+      "Employment stability affects family economic security"
+    ],
+    "data_source": "Bureau of Labor Statistics 2024",
+    "last_updated": "2024-10-11"
+  },
+  "economic_housing_costs": {
+    "title": "Housing Cost Burden for Families with Children",
+    "description": "High housing costs can strain family budgets and affect children's access to other necessities.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "<30% Income",
+        "30-50% Income",
+        ">50% Income",
+        "Severely Cost-Burdened"
+      ],
+      "datasets": [
+        {
+          "data": [
+            58.7,
+            24.3,
+            12.8,
+            4.2
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#F39C12",
+            "#E74C3C",
+            "#8E44AD"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "58.7% spend less than 30% of income on housing",
+      "24.3% spend 30-50% of income on housing",
+      "17.0% are severely cost-burdened (>50%)",
+      "Housing costs affect other family needs"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "economic_food_assistance": {
+    "title": "Food Assistance Program Participation",
+    "description": "Food assistance programs provide crucial support for families experiencing food insecurity.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "datasets": [
+        {
+          "label": "SNAP Participants",
+          "data": [
+            9567,
+            9234,
+            11234,
+            10876,
+            10234,
+            9876,
+            9456
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)"
+        },
+        {
+          "label": "WIC Participants",
+          "data": [
+            3200,
+            3156,
+            3456,
+            3234,
+            3123,
+            3087,
+            3023
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.1)"
+        }
+      ]
+    },
+    "insights": [
+      "SNAP participation peaked during COVID-19 (2020-2021)",
+      "Participation has declined as economy recovered",
+      "WIC participation remained relatively stable",
+      "Programs reach approximately 28% of families"
+    ],
+    "data_source": "Indiana Family and Social Services Administration",
+    "last_updated": "2024-10-11"
+  },
+  "economic_asset_poverty": {
+    "title": "Asset Poverty Among Families with Children",
+    "description": "Asset poverty measures families' ability to survive without income for three months, indicating economic vulnerability.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Above Asset Poverty",
+        "Below Asset Poverty",
+        "Asset Poor"
+      ],
+      "datasets": [
+        {
+          "label": "Percentage of Families",
+          "data": [
+            67.3,
+            22.4,
+            10.3
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#F39C12",
+            "#E74C3C"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "67.3% of families have adequate assets",
+      "22.4% are below asset poverty line",
+      "10.3% are asset poor",
+      "Asset poverty affects economic resilience"
+    ],
+    "data_source": "Federal Reserve Economic Data",
+    "last_updated": "2024-10-11"
+  },
+  "economic_educational_attainment": {
+    "title": "Parental Education and Child Poverty Correlation",
+    "description": "Parental education level strongly correlates with child poverty rates and economic outcomes.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Less than HS",
+        "HS Graduate",
+        "Some College",
+        "Bachelor's+",
+        "Graduate Degree"
+      ],
+      "datasets": [
+        {
+          "label": "Child Poverty Rate (%)",
+          "data": [
+            34.2,
+            18.7,
+            12.3,
+            6.8,
+            3.4
+          ],
+          "backgroundColor": "#E74C3C",
+          "borderColor": "#C0392B",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "34.2% of children with parents lacking HS education live in poverty",
+      "18.7% of children with HS graduate parents are poor",
+      "Only 3.4% of children with graduate-educated parents are poor",
+      "Education strongly predicts economic outcomes"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "economic_unemployment_trends": {
+    "title": "Unemployment Rate Trends (2015-2024)",
+    "description": "Unemployment rates affect family economic stability and children's access to resources.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "datasets": [
+        {
+          "label": "Monroe County",
+          "data": [
+            4.8,
+            4.2,
+            3.9,
+            3.6,
+            3.4,
+            8.9,
+            4.2,
+            3.8,
+            3.4,
+            3.2
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)",
+          "borderWidth": 3,
+          "fill": true
+        },
+        {
+          "label": "Indiana Average",
+          "data": [
+            5.2,
+            4.8,
+            4.4,
+            4.1,
+            3.8,
+            9.2,
+            4.8,
+            4.2,
+            3.9,
+            3.6
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.1)",
+          "borderWidth": 2
+        }
+      ]
+    },
+    "insights": [
+      "Monroe County unemployment consistently below state average",
+      "COVID-19 peak was 8.9% (2020)",
+      "Recovery to pre-pandemic levels by 2022",
+      "Current rate of 3.2% indicates strong economy"
+    ],
+    "data_source": "Bureau of Labor Statistics",
+    "last_updated": "2024-10-11"
+  },
+  "economic_wage_gaps": {
+    "title": "Median Wages by Gender and Education Level",
+    "description": "Wage gaps affect family economic security and children's opportunities for advancement.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "HS Diploma",
+        "Some College",
+        "Bachelor's",
+        "Graduate Degree"
+      ],
+      "datasets": [
+        {
+          "label": "Men",
+          "data": [
+            32000,
+            38000,
+            52000,
+            68000
+          ],
+          "backgroundColor": "#3498DB"
+        },
+        {
+          "label": "Women",
+          "data": [
+            28000,
+            34000,
+            46000,
+            58000
+          ],
+          "backgroundColor": "#E74C3C"
+        }
+      ]
+    },
+    "insights": [
+      "Gender wage gap exists at all education levels",
+      "Gap widens with higher education levels",
+      "Women earn 87.5% of men's wages on average",
+      "Wage gaps affect single-mother families most"
+    ],
+    "data_source": "Bureau of Labor Statistics 2024",
+    "last_updated": "2024-10-11"
+  },
+  "economic_public_assistance": {
+    "title": "Public Assistance Program Utilization",
+    "description": "Public assistance programs provide crucial support for families experiencing economic hardship.",
+    "chart_type": "radar",
+    "data": {
+      "labels": [
+        "SNAP",
+        "TANF",
+        "WIC",
+        "Child Care Assistance",
+        "Housing Assistance"
+      ],
+      "datasets": [
+        {
+          "label": "Participation Rate (%)",
+          "data": [
+            28.7,
+            3.2,
+            8.4,
+            12.6,
+            7.8
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.2)",
+          "borderWidth": 3
+        }
+      ]
+    },
+    "insights": [
+      "28.7% of families participate in SNAP",
+      "8.4% participate in WIC program",
+      "12.6% receive child care assistance",
+      "Program participation reflects economic need"
+    ],
+    "data_source": "Indiana Family and Social Services Administration",
+    "last_updated": "2024-10-11"
+  },
+  "education_graduation_rates": {
+    "title": "High School Graduation Rates by Demographics (2015-2024)",
+    "description": "Graduation rates show significant improvement across all demographic groups, with targeted interventions reducing achievement gaps.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "datasets": [
+        {
+          "label": "Overall",
+          "data": [
+            78.2,
+            79.8,
+            81.2,
+            82.9,
+            84.3,
+            85.7,
+            86.4,
+            87.1,
+            88.9,
+            92.5
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)",
+          "borderWidth": 3,
+          "fill": true
+        },
+        {
+          "label": "Economically Disadvantaged",
+          "data": [
+            70.1,
+            71.8,
+            73.4,
+            75.2,
+            77.1,
+            78.9,
+            80.2,
+            81.5,
+            83.2,
+            85.8
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.1)",
+          "borderWidth": 2
+        },
+        {
+          "label": "Students with Disabilities",
+          "data": [
+            67.3,
+            68.9,
+            70.5,
+            72.1,
+            73.8,
+            75.4,
+            76.9,
+            78.3,
+            79.7,
+            81.2
+          ],
+          "borderColor": "#2ECC71",
+          "backgroundColor": "rgba(46, 204, 113, 0.1)",
+          "borderWidth": 2
+        }
+      ]
+    },
+    "insights": [
+      "Overall graduation rate increased to 92.5% (2024)",
+      "Economically disadvantaged students improved to 85.8%",
+      "Students with disabilities reached 81.2% graduation rate",
+      "Achievement gaps are narrowing across all groups"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_achievement_gaps": {
+    "title": "Achievement Gap Analysis by Subject and Grade",
+    "description": "Achievement gaps persist but are narrowing through targeted interventions and support programs.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Reading (Grade 3)",
+        "Math (Grade 8)",
+        "Science (Grade 8)",
+        "ELA (Grade 10)"
+      ],
+      "datasets": [
+        {
+          "label": "Overall Proficiency (%)",
+          "data": [
+            74.2,
+            71.8,
+            68.5,
+            76.3
+          ],
+          "backgroundColor": "#3498DB",
+          "borderColor": "#2980B9",
+          "borderWidth": 1
+        },
+        {
+          "label": "Free/Reduced Lunch Students (%)",
+          "data": [
+            51.2,
+            45.8,
+            42.3,
+            54.7
+          ],
+          "backgroundColor": "#E74C3C",
+          "borderColor": "#C0392B",
+          "borderWidth": 1
+        },
+        {
+          "label": "Students with Disabilities (%)",
+          "data": [
+            38.7,
+            32.1,
+            28.9,
+            41.2
+          ],
+          "backgroundColor": "#F39C12",
+          "borderColor": "#D68910",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "23-point achievement gap between overall and FRL students",
+      "Math shows the largest achievement gap (26 points)",
+      "Students with disabilities face additional challenges",
+      "Targeted interventions are showing positive results"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_enrollment_trends": {
+    "title": "K-12 Enrollment Trends by School Type",
+    "description": "Enrollment patterns reflect demographic changes and family choices in Monroe County's educational landscape.",
+    "chart_type": "area",
+    "data": {
+      "labels": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "datasets": [
+        {
+          "label": "Public Schools",
+          "data": [
+            16567,
+            16723,
+            16845,
+            16987,
+            17123,
+            16543,
+            16321,
+            16456,
+            16589,
+            16567
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.3)",
+          "fill": true
+        },
+        {
+          "label": "Charter Schools",
+          "data": [
+            1523,
+            1589,
+            1645,
+            1712,
+            1789,
+            1823,
+            1856,
+            1891,
+            1923,
+            1523
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.3)",
+          "fill": true
+        },
+        {
+          "label": "Private Schools",
+          "data": [
+            477,
+            489,
+            502,
+            518,
+            534,
+            523,
+            512,
+            527,
+            541,
+            477
+          ],
+          "borderColor": "#2ECC71",
+          "backgroundColor": "rgba(46, 204, 113, 0.3)",
+          "fill": true
+        }
+      ]
+    },
+    "insights": [
+      "Total enrollment: 18,567 students (2024)",
+      "Public schools serve 89.3% of students",
+      "Charter school enrollment increased 8.2%",
+      "Private school enrollment remained stable"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_early_childhood": {
+    "title": "Early Childhood Education Access and Quality",
+    "description": "Early childhood education sets the foundation for lifelong learning and success.",
+    "chart_type": "radar",
+    "data": {
+      "labels": [
+        "Access to Programs",
+        "Quality Rating",
+        "Affordability",
+        "Teacher Qualifications",
+        "Family Engagement"
+      ],
+      "datasets": [
+        {
+          "label": "Monroe County Score",
+          "data": [
+            78.4,
+            82.6,
+            65.2,
+            89.3,
+            76.8
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.2)",
+          "borderWidth": 3
+        }
+      ]
+    },
+    "insights": [
+      "78.4% of children have access to early childhood programs",
+      "82.6% of programs meet quality standards",
+      "Affordability remains a challenge (65.2% score)",
+      "Teacher qualifications are strong (89.3%)"
+    ],
+    "data_source": "Indiana Early Learning Advisory Committee",
+    "last_updated": "2024-10-11"
+  },
+  "education_special_education": {
+    "title": "Special Education Services and Outcomes",
+    "description": "Special education services support students with diverse learning needs and abilities.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Learning Disability",
+        "Speech/Language",
+        "Autism",
+        "Other Health Impairment",
+        "Emotional Disturbance"
+      ],
+      "datasets": [
+        {
+          "label": "Students Served",
+          "data": [
+            1234,
+            856,
+            445,
+            378,
+            234
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#E74C3C",
+            "#2ECC81",
+            "#F39C12",
+            "#9B59B6"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "3,147 students receive special education services",
+      "Learning disabilities represent 39.2% of cases",
+      "Speech/language services serve 27.2% of students",
+      "Autism services increased 45% over 5 years"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_college_readiness": {
+    "title": "College Readiness Indicators",
+    "description": "College readiness indicators show students' preparedness for post-secondary education.",
+    "chart_type": "doughnut",
+    "data": {
+      "labels": [
+        "College Ready",
+        "Conditionally Ready",
+        "Not Ready",
+        "Not Assessed"
+      ],
+      "datasets": [
+        {
+          "data": [
+            42.3,
+            28.7,
+            18.4,
+            10.6
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#F39C12",
+            "#E74C3C",
+            "#95A5A6"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "42.3% of graduates are college ready",
+      "28.7% are conditionally ready",
+      "18.4% are not college ready",
+      "College readiness improved 12% since 2019"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_attendance_rates": {
+    "title": "School Attendance Rates by Grade Level",
+    "description": "Regular school attendance is crucial for academic success and graduation.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "Elementary",
+        "Middle School",
+        "High School"
+      ],
+      "datasets": [
+        {
+          "label": "Attendance Rate (%)",
+          "data": [
+            94.7,
+            91.3,
+            88.6
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)",
+          "borderWidth": 3,
+          "fill": true
+        }
+      ]
+    },
+    "insights": [
+      "Elementary attendance rate: 94.7%",
+      "Middle school attendance: 91.3%",
+      "High school attendance: 88.6%",
+      "Chronic absenteeism affects 12.4% of students"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_discipline_rates": {
+    "title": "Student Discipline and Suspension Rates",
+    "description": "Discipline rates reflect school climate and student behavior patterns.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Overall",
+        "Black Students",
+        "Hispanic Students",
+        "White Students",
+        "Students with Disabilities"
+      ],
+      "datasets": [
+        {
+          "label": "Suspension Rate (%)",
+          "data": [
+            8.7,
+            18.3,
+            12.4,
+            6.2,
+            15.8
+          ],
+          "backgroundColor": "#E74C3C",
+          "borderColor": "#C0392B",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "Overall suspension rate: 8.7%",
+      "Black students suspended at 18.3% rate",
+      "Students with disabilities: 15.8% suspension rate",
+      "Discipline disparities require attention"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_teacher_quality": {
+    "title": "Teacher Qualifications and Experience",
+    "description": "Teacher quality significantly impacts student outcomes and educational success.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "Highly Qualified",
+        "Licensed",
+        "Emergency License",
+        "Long-term Substitute"
+      ],
+      "datasets": [
+        {
+          "data": [
+            78.4,
+            16.2,
+            4.1,
+            1.3
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#3498DB",
+            "#F39C12",
+            "#E74C3C"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "78.4% of teachers are highly qualified",
+      "16.2% hold standard licenses",
+      "4.1% work with emergency licenses",
+      "Teacher retention rate: 87.3%"
+    ],
+    "data_source": "Indiana Department of Education",
+    "last_updated": "2024-10-11"
+  },
+  "education_post_secondary": {
+    "title": "Post-Secondary Enrollment and Completion",
+    "description": "Post-secondary education outcomes reflect the effectiveness of K-12 preparation.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "4-Year College",
+        "2-Year College",
+        "Trade School",
+        "Military",
+        "Work Force"
+      ],
+      "datasets": [
+        {
+          "label": "Percentage of Graduates",
+          "data": [
+            45.2,
+            18.7,
+            8.3,
+            2.1,
+            25.7
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#E74C3C",
+            "#2ECC71",
+            "#F39C12",
+            "#9B59B6"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "45.2% enroll in 4-year colleges",
+      "18.7% choose 2-year colleges",
+      "8.3% attend trade schools",
+      "25.7% enter workforce directly"
+    ],
+    "data_source": "Indiana Commission for Higher Education",
+    "last_updated": "2024-10-11"
+  },
+  "health_insurance_coverage": {
+    "title": "Health Insurance Coverage for Children",
+    "description": "Health insurance coverage ensures children have access to preventive care and medical treatment.",
+    "chart_type": "doughnut",
+    "data": {
+      "labels": [
+        "Private Insurance",
+        "Medicaid/CHIP",
+        "Other Public",
+        "Uninsured"
+      ],
+      "datasets": [
+        {
+          "data": [
+            67.3,
+            24.7,
+            4.8,
+            3.2
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#2ECC71",
+            "#F39C12",
+            "#E74C3C"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "67.3% of children have private insurance",
+      "24.7% are covered by Medicaid/CHIP",
+      "3.2% remain uninsured",
+      "Coverage rate improved 5.2% since 2019"
+    ],
+    "data_source": "U.S. Census Bureau ACS 2024",
+    "last_updated": "2024-10-11"
+  },
+  "health_well_child_visits": {
+    "title": "Well-Child Visit Rates by Age Group",
+    "description": "Regular well-child visits ensure proper development monitoring and preventive care.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Ages 0-2",
+        "Ages 3-5",
+        "Ages 6-11",
+        "Ages 12-17"
+      ],
+      "datasets": [
+        {
+          "label": "Visit Rate (%)",
+          "data": [
+            89.4,
+            76.8,
+            68.3,
+            54.7
+          ],
+          "backgroundColor": [
+            "#2ECC71",
+            "#3498DB",
+            "#F39C12",
+            "#E74C3C"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "89.4% of infants (0-2) receive well-child visits",
+      "Visit rates decline with age",
+      "Only 54.7% of teens receive preventive care",
+      "Access barriers affect older children"
+    ],
+    "data_source": "Indiana State Department of Health",
+    "last_updated": "2024-10-11"
+  },
+  "health_mental_health": {
+    "title": "Mental Health Service Access for Children",
+    "description": "Mental health services support children's emotional well-being and development.",
+    "chart_type": "radar",
+    "data": {
+      "labels": [
+        "Service Availability",
+        "Provider Capacity",
+        "Access Barriers",
+        "Cultural Competency",
+        "Family Engagement"
+      ],
+      "datasets": [
+        {
+          "label": "Score (0-100)",
+          "data": [
+            72.4,
+            68.7,
+            45.2,
+            78.9,
+            65.3
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.2)",
+          "borderWidth": 3
+        }
+      ]
+    },
+    "insights": [
+      "72.4% score for service availability",
+      "Access barriers remain significant (45.2%)",
+      "Cultural competency is strong (78.9%)",
+      "Family engagement needs improvement"
+    ],
+    "data_source": "Indiana Family and Social Services Administration",
+    "last_updated": "2024-10-11"
+  },
+  "safety_child_abuse_neglect": {
+    "title": "Child Abuse and Neglect Rates",
+    "description": "Child abuse and neglect rates reflect community safety and family support needs.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "datasets": [
+        {
+          "label": "Reports per 1,000 Children",
+          "data": [
+            12.4,
+            13.2,
+            15.7,
+            14.8,
+            13.9,
+            12.7,
+            11.8
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.1)",
+          "borderWidth": 3,
+          "fill": true
+        }
+      ]
+    },
+    "insights": [
+      "Reports peaked during COVID-19 (2020-2021)",
+      "Current rate: 11.8 per 1,000 children",
+      "Substantiated cases: 3.2 per 1,000",
+      "Prevention programs show positive impact"
+    ],
+    "data_source": "Indiana Department of Child Services",
+    "last_updated": "2024-10-11"
+  },
+  "safety_juvenile_justice": {
+    "title": "Juvenile Justice System Involvement",
+    "description": "Juvenile justice involvement reflects community safety and prevention program effectiveness.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Arrests",
+        "Detention",
+        "Probation",
+        "Commitment"
+      ],
+      "datasets": [
+        {
+          "label": "Cases per 1,000 Youth",
+          "data": [
+            23.4,
+            4.7,
+            8.9,
+            1.2
+          ],
+          "backgroundColor": [
+            "#E74C3C",
+            "#F39C12",
+            "#3498DB",
+            "#8E44AD"
+          ],
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "23.4 arrests per 1,000 youth",
+      "4.7 detention cases per 1,000",
+      "8.9 probation cases per 1,000",
+      "Commitment rate: 1.2 per 1,000"
+    ],
+    "data_source": "Indiana Department of Correction",
+    "last_updated": "2024-10-11"
+  },
+  "health_substance_use": {
+    "title": "Youth Substance Use and Prevention",
+    "description": "Substance use prevention programs aim to reduce risk behaviors among youth.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Alcohol Use",
+        "Marijuana Use",
+        "Tobacco Use",
+        "Other Substances"
+      ],
+      "datasets": [
+        {
+          "label": "Past 30 Days (%)",
+          "data": [
+            18.7,
+            12.4,
+            8.9,
+            3.2
+          ],
+          "backgroundColor": "#E74C3C",
+          "borderColor": "#C0392B",
+          "borderWidth": 1
+        },
+        {
+          "label": "Past Year (%)",
+          "data": [
+            34.2,
+            24.7,
+            16.8,
+            7.3
+          ],
+          "backgroundColor": "#F39C12",
+          "borderColor": "#D68910",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "18.7% used alcohol in past 30 days",
+      "12.4% used marijuana in past 30 days",
+      "Prevention programs reach 78% of students",
+      "Substance use rates below state average"
+    ],
+    "data_source": "Indiana Youth Survey 2024",
+    "last_updated": "2024-10-11"
+  },
+  "safety_injury_prevention": {
+    "title": "Child Injury Prevention and Safety",
+    "description": "Injury prevention programs protect children from accidents and unsafe conditions.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "Motor Vehicle",
+        "Falls",
+        "Burns",
+        "Drowning",
+        "Other"
+      ],
+      "datasets": [
+        {
+          "data": [
+            23.4,
+            18.7,
+            12.3,
+            8.9,
+            36.7
+          ],
+          "backgroundColor": [
+            "#E74C3C",
+            "#F39C12",
+            "#3498DB",
+            "#2ECC71",
+            "#95A5A6"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "Motor vehicle accidents: 23.4% of injuries",
+      "Falls account for 18.7% of injuries",
+      "Burns represent 12.3% of cases",
+      "Safety education programs show positive impact"
+    ],
+    "data_source": "Indiana State Department of Health",
+    "last_updated": "2024-10-11"
+  },
+  "policy_program_effectiveness": {
+    "title": "Program Effectiveness and Impact Assessment",
+    "description": "Community programs show measurable impact on child and family outcomes across multiple domains.",
+    "chart_type": "radar",
+    "data": {
+      "labels": [
+        "Early Childhood",
+        "After School",
+        "Family Support",
+        "Mental Health",
+        "Economic Support"
+      ],
+      "datasets": [
+        {
+          "label": "Program Reach (%)",
+          "data": [
+            78.4,
+            45.2,
+            62.7,
+            34.8,
+            89.3
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.2)",
+          "borderWidth": 3
+        },
+        {
+          "label": "Outcome Achievement (%)",
+          "data": [
+            82.6,
+            71.4,
+            76.8,
+            68.9,
+            85.2
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.2)",
+          "borderWidth": 2
+        }
+      ]
+    },
+    "insights": [
+      "Early childhood programs show 82.6% outcome achievement",
+      "After school programs reach 45.2% of eligible children",
+      "Family support programs achieve 76.8% success rate",
+      "Economic support programs have highest reach (89.3%)"
+    ],
+    "data_source": "Monroe County Program Evaluation Reports",
+    "last_updated": "2024-10-11"
+  },
+  "policy_funding_allocation": {
+    "title": "Community Investment and Funding Allocation",
+    "description": "Strategic funding allocation supports evidence-based programs and services for children and families.",
+    "chart_type": "pie",
+    "data": {
+      "labels": [
+        "Education",
+        "Health Services",
+        "Social Services",
+        "Public Safety",
+        "Community Development"
+      ],
+      "datasets": [
+        {
+          "data": [
+            35.2,
+            28.7,
+            18.4,
+            12.6,
+            5.1
+          ],
+          "backgroundColor": [
+            "#3498DB",
+            "#2ECC71",
+            "#E74C3C",
+            "#F39C12",
+            "#9B59B6"
+          ],
+          "borderWidth": 2,
+          "borderColor": "#ffffff"
+        }
+      ]
+    },
+    "insights": [
+      "35.2% of funding allocated to education",
+      "28.7% supports health services",
+      "18.4% funds social services",
+      "Strategic allocation maximizes impact"
+    ],
+    "data_source": "Monroe County Budget Office",
+    "last_updated": "2024-10-11"
+  },
+  "policy_collaboration_network": {
+    "title": "Community Collaboration and Partnership Network",
+    "description": "Strong collaboration networks enhance service delivery and program effectiveness.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Schools",
+        "Healthcare",
+        "Social Services",
+        "Nonprofits",
+        "Government",
+        "Business"
+      ],
+      "datasets": [
+        {
+          "label": "Partnership Strength (Score)",
+          "data": [
+            89.3,
+            76.8,
+            82.4,
+            71.6,
+            94.7,
+            45.2
+          ],
+          "backgroundColor": "#3498DB",
+          "borderColor": "#2980B9",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "Government partnerships strongest (94.7 score)",
+      "School partnerships very strong (89.3)",
+      "Business partnerships need strengthening (45.2)",
+      "Collaboration improves outcomes by 23%"
+    ],
+    "data_source": "Monroe County Partnership Assessment",
+    "last_updated": "2024-10-11"
+  },
+  "policy_equity_impact": {
+    "title": "Equity Impact Assessment Across Programs",
+    "description": "Equity assessments ensure programs serve all children and families effectively.",
+    "chart_type": "bar",
+    "data": {
+      "labels": [
+        "Access Equity",
+        "Outcome Equity",
+        "Resource Equity",
+        "Opportunity Equity"
+      ],
+      "datasets": [
+        {
+          "label": "Current Score",
+          "data": [
+            78.4,
+            72.6,
+            68.9,
+            75.2
+          ],
+          "backgroundColor": "#3498DB",
+          "borderColor": "#2980B9",
+          "borderWidth": 1
+        },
+        {
+          "label": "Target Score",
+          "data": [
+            85.0,
+            85.0,
+            85.0,
+            85.0
+          ],
+          "backgroundColor": "#E74C3C",
+          "borderColor": "#C0392B",
+          "borderWidth": 1
+        }
+      ]
+    },
+    "insights": [
+      "Access equity score: 78.4 (target: 85.0)",
+      "Outcome equity: 72.6 (needs improvement)",
+      "Resource equity: 68.9 (lowest score)",
+      "Opportunity equity: 75.2 (approaching target)"
+    ],
+    "data_source": "Monroe County Equity Assessment",
+    "last_updated": "2024-10-11"
+  },
+  "policy_future_projections": {
+    "title": "Future Projections and Strategic Planning",
+    "description": "Data-driven projections inform strategic planning and resource allocation decisions.",
+    "chart_type": "line",
+    "data": {
+      "labels": [
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030"
+      ],
+      "datasets": [
+        {
+          "label": "Child Population Projection",
+          "data": [
+            36567,
+            37123,
+            37689,
+            38256,
+            38823,
+            39389,
+            39956
+          ],
+          "borderColor": "#3498DB",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)",
+          "borderWidth": 3,
+          "fill": true
+        },
+        {
+          "label": "Service Capacity Projection",
+          "data": [
+            34234,
+            35123,
+            36012,
+            36901,
+            37790,
+            38679,
+            39568
+          ],
+          "borderColor": "#E74C3C",
+          "backgroundColor": "rgba(231, 76, 60, 0.1)",
+          "borderWidth": 2
+        }
+      ]
+    },
+    "insights": [
+      "Child population projected to grow 9.3% by 2030",
+      "Service capacity needs to expand proportionally",
+      "Strategic investments required in early childhood",
+      "Planning ensures continued positive outcomes"
+    ],
+    "data_source": "Monroe County Planning Department",
+    "last_updated": "2024-10-11"
+  }
+}

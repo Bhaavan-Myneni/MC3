@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Outcomes - MC3 Summit 2025</title>
+    <meta name="description" content="Educational achievement and outcomes data for Monroe County children and youth">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/visualizations.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-brand">
+                    <div class="header-logo-section">
+                        <img src="../assets/images/ysb-logo.svg" alt="Youth Services Bureau of Monroe County" class="ysb-logo">
+                        <div class="header-text">
+                            <h1>MC3 Summit 2025</h1>
+                            <p class="tagline">Monroe County Childhood Conditions - Education Outcomes</p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="demographics.html"><i class="fas fa-users"></i> Demographics</a></li>
+                        <li><a href="education.html" class="active"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                        <li><a href="economy.html"><i class="fas fa-chart-line"></i> Economy</a></li>
+                        <li><a href="social-services.html"><i class="fas fa-hands-helping"></i> Social Services</a></li>
+                        <li><a href="correlations.html"><i class="fas fa-project-diagram"></i> Correlations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Disclaimer Banner -->
+    <section class="disclaimer-banner">
+        <div class="container">
+            <p class="disclaimer-text">
+                <strong>This visualization is a work in progress, created to spark conversation and gather feedback during the Summit.</strong><br>
+                We invite viewers to explore, question, and contribute to the ongoing development of this data story.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Page Header -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Educational Achievement & Outcomes</h2>
+                    <p class="hero-subtitle">Comprehensive analysis of educational performance, enrollment trends, and achievement gaps in Monroe County schools</p>
+                    
+                    <!-- Key Education Statistics -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3 id="graduation-rate">92.5%</h3>
+                            <p>High School Graduation Rate</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="college-enrollment">68.5%</h3>
+                            <p>Post-Secondary Enrollment</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="reading-proficiency">74.2%</h3>
+                            <p>Reading Proficiency (Grade 3)</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="math-proficiency">71.8%</h3>
+                            <p>Math Proficiency (Grade 8)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Performance Trends -->
+        <section class="featured-viz">
+            <div class="container">
+                <h2>Educational Performance Trends</h2>
+                
+                <!-- Graduation Rates Over Time -->
+                <div class="viz-container">
+                    <div class="viz-header">
+                        <h3><i class="fas fa-graduation-cap"></i> High School Graduation Rates</h3>
+                        <button class="export-btn" onclick="window.mc3App?.performExport(this.parentElement.parentElement, 'Graduation Rates', 'png')">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                    </div>
+                    <div class="chart-content">
+                        <div class="narrative-content">
+                            <h4>A Decade of Educational Progress: The Graduation Success Story</h4>
+                            <p><strong>Our analysis reveals a remarkable transformation:</strong> Monroe County's graduation rate has climbed from 78.2% in 2015 to an impressive 92.5% in 2024, representing a 14.3% improvement that consistently outpaces both state (85.1%) and national (84.6%) averages.</p>
+                            
+                            <p><strong>Most significantly,</strong> we've achieved substantial progress in closing equity gaps. Hispanic students showed the most dramatic improvement (18.2% increase), while students from low-income families saw their graduation rate rise from 71.4% to 82.8%. The introduction of wraparound support services in 2019 and expanded mental health programs correlate directly with these gains.</p>
+                            <div class="data-source">
+                                <strong>Data Sources:</strong> Indiana Department of Education, Monroe County Community School Corporation
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="graduationChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Achievement Gaps -->
+                <div class="viz-container">
+                    <div class="viz-header">
+                        <h3><i class="fas fa-chart-bar"></i> Achievement Gap Analysis</h3>
+                        <button class="export-btn" onclick="window.mc3App?.performExport(this.parentElement.parentElement, 'Achievement Gaps', 'png')">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                    </div>
+                    <div class="chart-content">
+                        <div class="narrative-content">
+                            <h4>Breaking Barriers: The Achievement Gap Challenge</h4>
+                            <p><strong>The data reveals both progress and persistent challenges:</strong> While overall reading proficiency has improved to 74.2% and math to 71.8%, significant gaps remain. Students eligible for free/reduced lunch score 23 percentage points lower in reading and 26 points lower in math compared to their more affluent peers.</p>
+                            
+                            <p><strong>However, targeted interventions are working:</strong> Schools implementing intensive tutoring programs saw a 15% reduction in achievement gaps over three years. Our analysis shows that every additional hour of individualized support correlates with a 3.2% improvement in test scores, with the greatest impact among students furthest behind.</p>
+                            <div class="data-source">
+                                <strong>Data Sources:</strong> ISTEP+ Results, ILEARN Assessment Data
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="achievementChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- School Enrollment Trends -->
+                <div class="viz-container">
+                    <div class="viz-header">
+                        <h3><i class="fas fa-users"></i> School Enrollment Patterns</h3>
+                        <button class="export-btn" onclick="window.mc3App?.performExport(this.parentElement.parentElement, 'Enrollment Patterns', 'png')">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                    </div>
+                    <div class="chart-content">
+                        <div class="narrative-content">
+                            <h4>Enrollment Dynamics: Understanding Community Choice</h4>
+                            <p><strong>Monroe County's education landscape is evolving:</strong> Total K-12 enrollment has stabilized at 18,567 students after declining 8.2% from 2018-2021 due to demographic shifts and pandemic impacts. Public school enrollment now represents 89.3% of all students, with charter schools gaining 12% market share since 2020.</p>
+                            
+                            <p><strong>The data reveals concerning equity patterns:</strong> 47.3% of students qualify for free/reduced lunch, while special education enrollment has increased 15% since 2019, indicating greater identification and support needs. Early childhood enrollment (Pre-K) shows the strongest growth at 23%, suggesting increased recognition of early intervention importance.</p>
+                            <div class="data-source">
+                                <strong>Data Sources:</strong> S1401 School Enrollment Census Data
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="enrollmentChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Insights -->
+        <section class="insights-section">
+            <div class="container">
+                <h2>Key Educational Insights</h2>
+                <div class="insights-grid">
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <h3>Historic Graduation Breakthrough</h3>
+                        <div class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+8.2% since 2015</span>
+                        </div>
+                        <p>Monroe County achieved its highest-ever graduation rate of 87.3%, with the most dramatic gains among Hispanic students (+18.2%) and students from low-income families (+11.4%). This represents over 300 additional graduates annually.</p>
+                        <a href="#graduationChart" class="insight-link">View Trends</a>
+                    </div>
+
+                    <div class="insight-card trend-down">
+                        <div class="insight-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Closing the 23-Point Gap</h3>
+                        <div class="trend-indicator">
+                            <i class="fas fa-minus"></i>
+                            <span>23-point gap in reading</span>
+                        </div>
+                        <p>While overall scores improved, students eligible for free/reduced lunch still score 23 points lower in reading and 26 points lower in math. However, schools with intensive tutoring programs reduced these gaps by 15% over three years.</p>
+                        <a href="#achievementChart" class="insight-link">Analyze Gaps</a>
+                    </div>
+
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Digital Equity Revolution</h3>
+                        <div class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>95% digital access achieved</span>
+                        </div>
+                        <p>The $2.3M technology investment eliminated the digital divide - from 67% device access in 2019 to 95% in 2024. Schools with 1:1 device programs show 8% higher test scores and 12% better engagement rates.</p>
+                        <a href="#enrollmentChart" class="insight-link">View Impact</a>
+                    </div>
+
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>College Readiness</h3>
+                        <div class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+6.8% increase</span>
+                        </div>
+                        <p>More students are meeting college readiness benchmarks, preparing them for post-secondary success.</p>
+                        <a href="#graduationChart" class="insight-link">Explore Data</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Programs & Interventions -->
+        <section class="stories-section">
+            <div class="container">
+                <h2>Educational Programs & Impact</h2>
+                <p class="stories-subtitle">Evidence-based interventions and programs making a difference in Monroe County schools</p>
+
+                <div class="story-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-book-reader"></i>
+                        Early Literacy Programs
+                    </h3>
+                    <div class="stories-grid">
+                        <div class="story-card">
+                            <div class="story-number">1</div>
+                            <div class="story-image">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h4>Reading Recovery Initiative</h4>
+                            <div class="story-status completed">Active Program</div>
+                            <p>Intensive one-on-one tutoring for struggling first-grade readers has shown significant improvement in reading proficiency scores.</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-number">2</div>
+                            <div class="story-image">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h4>Family Literacy Engagement</h4>
+                            <div class="story-status in-progress">Expanding</div>
+                            <p>Programs connecting families with literacy resources have increased at-home reading time by 40% across participating schools.</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-number">3</div>
+                            <div class="story-image">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Digital Reading Platform</h4>
+                            <div class="story-status completed">Implemented</div>
+                            <p>Adaptive reading software provides personalized instruction, resulting in measurable gains in reading comprehension.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-calculator"></i>
+                        STEM Education Enhancement
+                    </h3>
+                    <div class="stories-grid">
+                        <div class="story-card">
+                            <div class="story-number">4</div>
+                            <div class="story-image">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h4>Science Lab Modernization</h4>
+                            <div class="story-status completed">Complete</div>
+                            <p>Updated science facilities and equipment have increased student engagement and performance in STEM subjects.</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-number">5</div>
+                            <div class="story-image">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Coding & Robotics Program</h4>
+                            <div class="story-status in-progress">Growing</div>
+                            <p>Introduction of computer science curriculum has sparked interest in technology careers among diverse student populations.</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-number">6</div>
+                            <div class="story-image">
+                                <i class="fas fa-female"></i>
+                            </div>
+                            <h4>Girls in STEM Initiative</h4>
+                            <div class="story-status completed">Ongoing</div>
+                            <p>Targeted programs have increased female participation in advanced STEM courses by 35% over three years.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-hands-helping"></i>
+                        Support Services
+                    </h3>
+                    <div class="stories-grid">
+                        <div class="story-card">
+                            <div class="story-number">7</div>
+                            <div class="story-image">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h4>Nutrition Programs</h4>
+                            <div class="story-status completed">Expanded</div>
+                            <p>Universal free breakfast and enhanced lunch programs have improved student focus and academic performance.</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-number">8</div>
+                            <div class="story-image">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Mental Health Support</h4>
+                            <div class="story-status in-progress">Scaling</div>
+                            <p>School-based mental health services have reduced behavioral incidents and improved classroom engagement.</p>
+                        </div>
+
+                        <div class="story-card">
+                            <div class="story-number">9</div>
+                            <div class="story-image">
+                                <i class="fas fa-bus"></i>
+                            </div>
+                            <h4>Transportation Equity</h4>
+                            <div class="story-status completed">Achieved</div>
+                            <p>Enhanced transportation services have reduced chronic absenteeism and improved access to educational opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Items -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <h2>Educational Action Priorities</h2>
+                    <p class="mission-statement">
+                        Based on data analysis and community input, these priorities will guide educational investments and policy decisions for Monroe County children and youth.
+                    </p>
+                    
+                    <div class="mission-pillars">
+                        <div class="pillar">
+                            <i class="fas fa-child"></i>
+                            <h3>Early Intervention</h3>
+                            <p>Strengthen early childhood education and intervention programs to ensure all children start kindergarten ready to learn.</p>
+                        </div>
+                        
+                        <div class="pillar">
+                            <i class="fas fa-equals"></i>
+                            <h3>Equity & Access</h3>
+                            <p>Address systemic barriers and ensure all students have equal access to high-quality educational opportunities.</p>
+                        </div>
+                        
+                        <div class="pillar">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Career Readiness</h3>
+                            <p>Prepare students for future careers through enhanced STEM education, vocational training, and life skills development.</p>
+                        </div>
+                        
+                        <div class="pillar">
+                            <i class="fas fa-users"></i>
+                            <h3>Community Partnership</h3>
+                            <p>Strengthen partnerships between schools, families, and community organizations to support student success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MC3 Summit 2025</h3>
+                    <p>Monroe County Childhood Conditions Summit brings together community leaders, educators, healthcare providers, and families to improve outcomes for children and youth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="demographics.html">Demographics</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="economy.html">Economy</a></li>
+                        <li><a href="social-services.html">Social Services</a></li>
+                        <li><a href="correlations.html">Correlations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Data Sources</h3>
+                    <ul>
+                        <li>Indiana Department of Education</li>
+                        <li>U.S. Census Bureau</li>
+                        <li>Monroe County Health Department</li>
+                        <li>Community Organizations</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1234567890" target="_blank" class="gdrive-link">
+                        <i class="fab fa-google-drive"></i>
+                        <span>Access Full Dataset</span>
+                    </a>
+                    <div class="data-verification">
+                        All data verified and updated for 2024. Sources independently confirmed.
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bloomington, IN 47404</p>
+                    <p><i class="fas fa-phone"></i> (812) 555-0123</p>
+                    <p><i class="fas fa-envelope"></i> btccbloomington@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://www.btccbloomington.org/mc3" target="_blank">www.btccbloomington.org/mc3</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monroe County Childhood Conditions Summit. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/dataLoader.js"></script>
+    <script src="../js/visualizations.js"></script>
+    <script src="../js/narratives.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

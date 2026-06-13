@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workbook source-build='2024.1.0' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences />
+  <datasources>
+    <datasource caption='MC3 Mental Health Signal' inline='true' name='MC3 Mental Health Signal' version='18.1'>
+      <connection class='textscan' directory='/Users/bhaavanmyneni/Downloads/MC3/data/processed' filename='mental_health_clean.csv' />
+      <relation name='mental_health_clean.csv' table='[mental_health_clean.csv#csv]' type='table'>
+        <columns header='yes' separator=','>
+<column datatype="integer" name="year" ordinal="0" />
+<column datatype="integer" name="indicator_value" ordinal="1" />
+        </columns>
+      </relation>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Suicide Deaths Trend' />
+  </worksheets>
+</workbook>

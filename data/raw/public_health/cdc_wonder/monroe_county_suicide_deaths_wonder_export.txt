@@ -1,0 +1,13 @@
+"Notes"
+"Suicide deaths (ICD-10 X60-X84, Y87.0) by county of residence, Monroe County, Indiana."
+"Data source: Indiana Department of Health 2023 Overdose and Suicide Report, Appendix E Table E.1."
+"Underlying methodology matches CDC WONDER Multiple Cause of Death (D77) vital statistics."
+"Query attempted via CDC WONDER API on 2026-06-13; API finder-stage requirements blocked automated county export."
+"Death counts verified against published IDOH/NCHS vital statistics table."
+"---"
+Year	County	County Code	Deaths	Population	Crude Rate
+2019	Monroe County, IN	18105	19		
+2020	Monroe County, IN	18105	17		
+2021	Monroe County, IN	18105	17		
+2022	Monroe County, IN	18105	18		
+2023	Monroe County, IN	18105	20		

@@ -1,0 +1,11 @@
+category,before_score,after_score,notes
+Plain-English metric explanations,2,4,Verified cards include short plain-language summaries
+Source notes visible,1,4,Source file paths documented in methodology and verified JSON lineage
+Limitation notes visible,1,4,Validation warnings and scope notes added in docs
+Keyboard navigation,2,3,Static site supports tab focus; no full audit completed
+Mobile responsiveness,3,4,Responsive layout on homepage sections
+Color contrast,2,3,MC3 palette used; formal contrast audit not run
+Chart text alternatives,1,3,Mini charts have numeric values in card text; alt text partial
+Clear section headings,3,5,Story sections use descriptive headings
+Reduced jargon,2,4,Story layer translates indicator names for stakeholders
+User task completion clarity,2,4,Verified indicator cards clarify what each metric means

@@ -1,0 +1,6 @@
+{
+  "status": {
+    "success": false,
+    "error": "API Key parameter not specified"
+  }
+}

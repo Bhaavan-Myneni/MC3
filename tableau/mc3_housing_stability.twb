@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workbook source-build='2024.1.0' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences />
+  <datasources>
+    <datasource caption='MC3 Housing Stability' inline='true' name='MC3 Housing Stability' version='18.1'>
+      <connection class='textscan' directory='/Users/bhaavanmyneni/Downloads/MC3/data/processed' filename='housing_stability_clean.csv' />
+      <relation name='housing_stability_clean.csv' table='[housing_stability_clean.csv#csv]' type='table'>
+        <columns header='yes' separator=','>
+<column datatype="integer" name="year" ordinal="0" />
+<column datatype="real" name="indicator_value" ordinal="1" />
+        </columns>
+      </relation>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Rent Burden Trend' />
+  </worksheets>
+</workbook>

@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-06-13T22:00:49.258072+00:00",
+  "indicators_attempted": [
+    {
+      "name": "acs_housing_demographics",
+      "label": "ACS housing and demographics"
+    },
+    {
+      "name": "housing_stability",
+      "label": "Housing stability (rent burden)"
+    },
+    {
+      "name": "food_access",
+      "label": "Food access (SNAP proxy)"
+    },
+    {
+      "name": "public_health",
+      "label": "Public health (uninsured children)"
+    },
+    {
+      "name": "cdc_wonder",
+      "label": "CDC WONDER suicide mortality"
+    },
+    {
+      "name": "mental_health",
+      "label": "Mental health (suicide mortality signal)"
+    }
+  ],
+  "indicators_processed": [
+    {
+      "name": "acs_housing_demographics",
+      "label": "ACS housing and demographics",
+      "rows": 19,
+      "year_range": [
+        2013,
+        2023
+      ],
+      "latest_value": 58.7,
+      "indicator_unit": "percent",
+      "data_topic": "housing"
+    },
+    {
+      "name": "housing_stability",
+      "label": "Housing stability (rent burden)",
+      "rows": 12,
+      "year_range": [
+        2013,
+        2023
+      ],
+      "latest_value": 58.7,
+      "indicator_unit": "percent",
+      "data_topic": "housing"
+    },
+    {
+      "name": "food_access",
+      "label": "Food access (SNAP proxy)",
+      "rows": 34,
+      "year_range": [
+        1990,
+        2023
+      ],
+      "latest_value": 7527.0,
+      "indicator_unit": "count",
+      "data_topic": "food_access"
+    },
+    {
+      "name": "public_health_mental_health",
+      "label": "Public health (uninsured children)",
+      "rows": 11,
+      "year_range": [
+        2014,
+        2024
+      ],
+      "latest_value": 5.13,
+      "indicator_unit": "percent",
+      "data_topic": "public_health"
+    },
+    {
+      "name": "cdc_wonder_suicide",
+      "label": "CDC WONDER suicide mortality",
+      "rows": 5,
+      "year_range": [
+        2019,
+        2023
+      ],
+      "latest_value": 20.0,
+      "indicator_unit": "count",
+      "data_topic": "cdc_wonder"
+    },
+    {
+      "name": "mental_health",
+      "label": "Mental health (suicide mortality signal)",
+      "rows": 5,
+      "year_range": [
+        2019,
+        2023
+      ],
+      "latest_value": 20.0,
+      "indicator_unit": "count",
+      "data_topic": "mental_health"
+    }
+  ],
+  "indicators_skipped": [],
+  "cdc_wonder_status": "processed_from_raw_export",
+  "mental_health_status": "verified_suicide_mortality_signal",
+  "validation_warnings": [
+    {
+      "type": "public_health_scope",
+      "message": "public_health_mental_health_clean.json contains uninsured children rates from Clinical Care.csv. This is clinical care access, not mental health."
+    },
+    {
+      "type": "mental_health_scope",
+      "message": "mental_health_clean.json uses county suicide deaths from CDC WONDER / NCHS mortality data. This is a behavioral health mortality signal, not youth survey data."
+    },
+    {
+      "type": "food_access_scope",
+      "message": "food_access_clean.json is derived from SNAP participation and should be described as a food assistance access proxy, not total food insecurity."
+    }
+  ]
+}

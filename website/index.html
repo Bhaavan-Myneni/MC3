@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC3 Summit 2025 - Monroe County Childhood Conditions</title>
+    <meta name="description" content="Monroe County Childhood Conditions Summit 2025 - Data insights for improving conditions for children and youth">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0"> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/visualizations.css">
+    
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header matching Monroe County website -->
+    <header class="main-header">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-brand">
+                    <div class="header-logo-section">
+                        <img src="assets/images/ysb-logo.svg" alt="Youth Services Bureau of Monroe County" class="ysb-logo">
+                        <div class="header-text">
+                            <h1>Monroe County, Indiana</h1>
+                            <p class="tagline">MC3 Summit 2025 - Childhood Conditions Data Portal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="pages/demographics.html">Demographics</a></li>
+                        <li><a href="pages/education.html">Education</a></li>
+                        <li><a href="pages/economy.html">Economy</a></li>
+                        <li><a href="pages/social-services.html">Social Services</a></li>
+                        <li><a href="pages/correlations.html">Correlations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Disclaimer Banner -->
+    <section class="disclaimer-banner">
+        <div class="container">
+            <p class="disclaimer-text">
+                <strong>This visualization is a work in progress, created to spark conversation and gather feedback during the Summit.</strong><br>
+                We invite viewers to explore, question, and contribute to the ongoing development of this data story.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Monroe County Childhood Conditions Summit 2025</h2>
+                    <p class="hero-subtitle">Understanding Our Community's Impact on Children and Youth Through Data</p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3 id="total-population">Loading...</h3>
+                            <p>Total Population</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="poverty-rate">Loading...</h3>
+                            <p>Child Poverty Rate</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="graduation-rate">Loading...</h3>
+                            <p>High School Graduation Rate</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="unemployment-rate">Loading...</h3>
+                            <p>Family Unemployment Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summit Mission Statement -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <h2>Our Mission: What Surrounds Us Shapes Us</h2>
+                    <p class="mission-statement">
+                        The MC3 Summit brings together educators, healthcare providers, social service professionals, 
+                        parents, youth, business leaders, and community members to examine how our community 
+                        environment impacts child development and well-being.
+                    </p>
+                    <div class="mission-pillars">
+                        <div class="pillar">
+                            <i class="fas fa-heart"></i>
+                            <h3>Relationships</h3>
+                            <p>Strong family and community bonds</p>
+                        </div>
+                        <div class="pillar">
+                            <i class="fas fa-home"></i>
+                            <h3>Neighborhoods</h3>
+                            <p>Safe, supportive living environments</p>
+                        </div>
+                        <div class="pillar">
+                            <i class="fas fa-school"></i>
+                            <h3>Schools</h3>
+                            <p>Quality educational opportunities</p>
+                        </div>
+                        <div class="pillar">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Community Resources</h3>
+                            <p>Accessible support services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Insights Section -->
+        <section class="insights-section">
+            <div class="container">
+                <h2>Key Findings: Progress in Creating Thriving Conditions for Children</h2>
+                <div class="insights-grid">
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Educational Success</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="trend-value">+7.6%</span>
+                        </p>
+                        <p>High school graduation rates have improved dramatically, creating better pathways for our youth to succeed and remain in our community.</p>
+                        <a href="pages/education.html" class="insight-link">Explore Education Data</a>
+                    </div>
+                    
+                    <div class="insight-card trend-down">
+                        <div class="insight-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>Child Poverty Reduction</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-arrow-down"></i>
+                            <span class="trend-value">-8.3%</span>
+                        </p>
+                        <p>Significant progress in reducing child poverty through coordinated community efforts and evidence-based interventions.</p>
+                        <a href="pages/social-services.html" class="insight-link">View Support Programs</a>
+                    </div>
+                    
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Food Security</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="trend-value">Improved</span>
+                        </p>
+                        <p>School nutrition programs and community food assistance have strengthened, ensuring children have the foundation they need to learn and grow.</p>
+                        <a href="pages/social-services.html" class="insight-link">Explore Food Programs</a>
+                    </div>
+                    
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Child Safety</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="trend-value">Enhanced</span>
+                        </p>
+                        <p>Improved child welfare systems and community partnerships have created safer environments for all children in Monroe County.</p>
+                        <a href="pages/correlations.html" class="insight-link">View Safety Metrics</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- MC3 Storytelling — What Surrounds Us, Shapes Us              -->
+        <!-- ============================================================ -->
+        <section class="mc3-story-intro" id="mc3-story-intro" aria-labelledby="mc3-story-heading">
+            <div class="container">
+                <h2 id="mc3-story-heading">What Surrounds Us, Shapes Us</h2>
+                <p class="mc3-story-subtitle">
+                    A decade of MC3 has shown that childhood conditions are shaped by the relationships,
+                    places, systems, and supports surrounding children and families.
+                </p>
+                <div class="mc3-story-body">
+                    <p>
+                        For the past 10 years, MC3 has explored the idea that children and youth are shaped
+                        by more than individual choices. They are shaped by the relationships they are part of,
+                        the neighborhoods they live in, the places they learn and play, and the policies and
+                        practices developed by the organizations and institutions that interact with their families.
+                    </p>
+                    <p>
+                        This dashboard uses verified community indicators to help translate that idea into data.
+                        Poverty, graduation, unemployment, child population, and SNAP participation do not tell
+                        the whole story by themselves, but together they help describe the conditions surrounding
+                        children and families in Monroe County.
+                    </p>
+                </div>
+                <aside class="mc3-callout-box" aria-label="MC3 2025 focus">
+                    <h3>MC3 2025 Focus</h3>
+                    <p>
+                        Looking back at 10 years of childhood conditions, celebrating progress, and asking what
+                        partnerships, resources, and strategies are needed for the next 10 years.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- CDC Essentials for Childhood -->
+        <section class="mc3-cdc-framework" id="mc3-cdc-framework" aria-labelledby="cdc-framework-heading">
+            <div class="container">
+                <h2 id="cdc-framework-heading">Safe, Stable, and Nurturing Relationships and Environments</h2>
+                <p class="mc3-framework-intro">
+                    The CDC's Essentials for Childhood framework emphasizes the importance of safe, stable,
+                    and nurturing relationships and environments. When children have access to these conditions,
+                    they are more likely to thrive — and thriving children are more likely to grow into thriving adults.
+                </p>
+                <p class="mc3-framework-intro">
+                    This dashboard connects that framework to local indicators. The goal is not to reduce
+                    children's lives to numbers, but to help community partners identify where support,
+                    coordination, and resources may be needed.
+                </p>
+                <div class="mc3-concept-cards">
+                    <article class="mc3-concept-card">
+                        <h3><i class="fas fa-heart"></i> Relationships</h3>
+                        <p>
+                            Family, peer, school, and community relationships shape how children experience
+                            support and belonging.
+                        </p>
+                    </article>
+                    <article class="mc3-concept-card">
+                        <h3><i class="fas fa-home"></i> Neighborhoods</h3>
+                        <p>
+                            Housing, transportation, safety, and access to nearby resources influence daily
+                            childhood conditions.
+                        </p>
+                    </article>
+                    <article class="mc3-concept-card">
+                        <h3><i class="fas fa-school"></i> Learning and Play</h3>
+                        <p>
+                            Schools, childcare, after-school programs, parks, and youth spaces shape opportunity
+                            and development.
+                        </p>
+                    </article>
+                    <article class="mc3-concept-card">
+                        <h3><i class="fas fa-landmark"></i> Policies and Practices</h3>
+                        <p>
+                            Institutions, service systems, and funding decisions shape the supports available
+                            to children and families.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Verified ETL Dashboard — all 5 verified indicators           -->
+        <!-- ============================================================ -->
+        <section class="verified-etl-hub" id="verified-etl-hub" aria-labelledby="verified-etl-hub-heading">
+            <div class="container">
+                <div class="verified-section-header verified-hub-header">
+                    <span class="verified-badge">Verified by ETL</span>
+                    <h2 id="verified-etl-hub-heading">Verified Community Indicators</h2>
+                    <p class="verified-subtitle">
+                        Five community indicators processed through the reproducible Python ETL pipeline.
+                        Values below come from <code>website/data/verified/</code> — not the older dashboard JSON.
+                    </p>
+                </div>
+
+                <div class="verified-indicators-dashboard" id="verified-indicators-dashboard">
+                    <!-- 1. Child Poverty -->
+                    <article class="verified-indicator-panel" data-indicator="poverty">
+                        <div class="verified-indicator-card">
+                            <span class="verified-indicator-topic">Demographics</span>
+                            <h3>Child Poverty</h3>
+                            <p class="verified-indicator-value" id="card-poverty-value">14.0% in 2024</p>
+                            <p class="verified-trend-label" id="card-poverty-trend">Down 6.2 percentage points from 2014 to 2024</p>
+                            <p class="verified-indicator-story-text" id="card-poverty-story"></p>
+                            <p class="verified-why-matters" id="card-poverty-why"></p>
+                            <p class="verified-source-label" id="card-poverty-source"></p>
+                            <p class="verified-limitation-note" id="card-poverty-limitation"></p>
+                        </div>
+                        <div class="verified-mini-chart-wrap">
+                            <canvas id="verifiedPovertyMiniChart" aria-label="Child poverty mini trend chart"></canvas>
+                            <p class="verified-mini-chart-note" id="verifiedPovertyMiniChart-note" hidden></p>
+                        </div>
+                    </article>
+
+                    <!-- 2. Graduation Rate -->
+                    <article class="verified-indicator-panel" data-indicator="graduation">
+                        <div class="verified-indicator-card">
+                            <span class="verified-indicator-topic">Education</span>
+                            <h3>Graduation Rate</h3>
+                            <p class="verified-indicator-value" id="card-graduation-value">90.77% in 2017</p>
+                            <p class="verified-trend-label" id="card-graduation-trend">Verified source ends in 2017</p>
+                            <p class="verified-indicator-story-text" id="card-graduation-story"></p>
+                            <p class="verified-why-matters" id="card-graduation-why"></p>
+                            <p class="verified-source-label" id="card-graduation-source"></p>
+                            <p class="verified-limitation-note" id="card-graduation-limitation"></p>
+                        </div>
+                        <div class="verified-mini-chart-wrap">
+                            <canvas id="verifiedGraduationMiniChart" aria-label="Graduation rate mini trend chart"></canvas>
+                            <p class="verified-mini-chart-note" id="verifiedGraduationMiniChart-note" hidden></p>
+                        </div>
+                    </article>
+
+                    <!-- 3. Unemployment -->
+                    <article class="verified-indicator-panel" data-indicator="unemployment">
+                        <div class="verified-indicator-card">
+                            <span class="verified-indicator-topic">Economy</span>
+                            <h3>Unemployment Rate</h3>
+                            <p class="verified-indicator-value" id="card-unemployment-value">5.8% in 2025</p>
+                            <p class="verified-trend-label" id="card-unemployment-trend"></p>
+                            <p class="verified-indicator-story-text" id="card-unemployment-story"></p>
+                            <p class="verified-why-matters" id="card-unemployment-why"></p>
+                            <p class="verified-source-label" id="card-unemployment-source"></p>
+                            <p class="verified-limitation-note" id="card-unemployment-limitation"></p>
+                        </div>
+                        <div class="verified-mini-chart-wrap">
+                            <canvas id="verifiedUnemploymentMiniChart" aria-label="Unemployment rate mini trend chart"></canvas>
+                            <p class="verified-mini-chart-note" id="verifiedUnemploymentMiniChart-note" hidden></p>
+                        </div>
+                    </article>
+
+                    <!-- 4. Child Population -->
+                    <article class="verified-indicator-panel" data-indicator="population">
+                        <div class="verified-indicator-card">
+                            <span class="verified-indicator-topic">Demographics</span>
+                            <h3>Child Population</h3>
+                            <p class="verified-indicator-value" id="card-population-value">44,236 in 2021</p>
+                            <p class="verified-trend-label" id="card-population-trend"></p>
+                            <p class="verified-indicator-story-text" id="card-population-story"></p>
+                            <p class="verified-why-matters" id="card-population-why"></p>
+                            <p class="verified-source-label" id="card-population-source"></p>
+                            <p class="verified-limitation-note" id="card-population-limitation"></p>
+                        </div>
+                        <div class="verified-mini-chart-wrap">
+                            <canvas id="verifiedChildPopulationMiniChart" aria-label="Child population mini trend chart"></canvas>
+                            <p class="verified-mini-chart-note" id="verifiedChildPopulationMiniChart-note" hidden></p>
+                        </div>
+                    </article>
+
+                    <!-- 5. SNAP Participants -->
+                    <article class="verified-indicator-panel" data-indicator="snap">
+                        <div class="verified-indicator-card">
+                            <span class="verified-indicator-topic">Social Services</span>
+                            <h3>SNAP Participants</h3>
+                            <p class="verified-indicator-value" id="card-snap-value">7,527 in 2023</p>
+                            <p class="verified-trend-label" id="card-snap-trend"></p>
+                            <p class="verified-indicator-story-text" id="card-snap-story"></p>
+                            <p class="verified-why-matters" id="card-snap-why"></p>
+                            <p class="verified-source-label" id="card-snap-source"></p>
+                            <p class="verified-limitation-note" id="card-snap-limitation"></p>
+                        </div>
+                        <div class="verified-mini-chart-wrap">
+                            <canvas id="verifiedSnapMiniChart" aria-label="SNAP participation mini trend chart"></canvas>
+                            <p class="verified-mini-chart-note" id="verifiedSnapMiniChart-note" hidden></p>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="reading-indicators-transition">
+                    These indicators are strongest when read together. Each one describes a different part of
+                    the environment surrounding children and families — economic pressure, educational opportunity,
+                    labor-market context, population need, and social service access.
+                </p>
+
+                <!-- Reading the Indicators Together -->
+                <section class="reading-indicators-section" id="reading-indicators-together" aria-labelledby="reading-indicators-heading">
+                    <h2 id="reading-indicators-heading">Reading the Indicators Together</h2>
+                    <p class="reading-indicators-body">
+                        No single indicator explains childhood conditions by itself. Poverty, employment, education,
+                        population, and social service participation should be read together. Poverty and SNAP
+                        participation can describe economic pressure. Unemployment provides broader labor-market
+                        context. Graduation reflects one part of the learning environment. Child population helps
+                        estimate the scale of services needed. Where source files end or older dashboard claims
+                        diverge from verified sources, the ETL validation workflow flags those gaps rather than
+                        repeating unverified figures.
+                    </p>
+                    <div class="mc3-question-cards">
+                        <article class="mc3-question-card">
+                            <h3>Where are economic pressures visible?</h3>
+                        </article>
+                        <article class="mc3-question-card">
+                            <h3>Which supports are families already using?</h3>
+                        </article>
+                        <article class="mc3-question-card">
+                            <h3>Which indicators show improvement?</h3>
+                        </article>
+                        <article class="mc3-question-card">
+                            <h3>Which indicators need updated or stronger data?</h3>
+                        </article>
+                        <article class="mc3-question-card">
+                            <h3>What partnerships are needed to keep momentum going?</h3>
+                        </article>
+                    </div>
+                </section>
+
+                <p class="verified-indicators-footnote">
+                    Only indicators processed through the reproducible ETL validation workflow are shown here.
+                    Older dashboard claims that did not match source files are flagged and not repeated as verified metrics.
+                </p>
+
+                <div class="verified-validation-warning" id="verified-multi-warning" hidden></div>
+            </div>
+        </section>
+
+        <!-- Verified Child Poverty Trend — detailed view (Phase 5, preserved) -->
+        <section class="verified-poverty-section" id="verified-poverty-section" aria-labelledby="verified-poverty-heading">
+            <div class="container">
+                <div class="verified-section-header">
+                    <span class="verified-badge" aria-label="Verified by ETL pipeline">Verified by ETL</span>
+                    <h2 id="verified-poverty-heading">Verified Child Poverty — Detailed Trend</h2>
+                    <p class="verified-subtitle">
+                        Full poverty trend chart from the reproducible Python ETL pipeline using
+                        <code>Children in Poverty.csv</code>. See the overview above for all five verified indicators.
+                    </p>
+                </div>
+
+                <p class="verified-explanation">
+                    The verified ETL output shows Monroe County's child poverty rate decreased from
+                    <strong><span id="verified-start-rate">20.2%</span> in <span id="verified-start-year">2014</span></strong>
+                    to
+                    <strong><span id="verified-end-rate">14.0%</span> in <span id="verified-end-year">2024</span></strong>.
+                    This section uses the reproducible ETL output instead of the older dashboard summary metric.
+                </p>
+
+                <div class="verified-metrics-grid">
+                    <div class="verified-metric-card">
+                        <h3>Latest Poverty Rate</h3>
+                        <p class="verified-metric-value" id="verified-latest-rate">14.0%</p>
+                        <p class="verified-metric-label">Monroe County, 2024</p>
+                    </div>
+                    <div class="verified-metric-card">
+                        <h3>Verified Improvement</h3>
+                        <p class="verified-metric-value" id="verified-pp-change">6.2 percentage points</p>
+                        <p class="verified-metric-label">2014 to 2024 change</p>
+                    </div>
+                    <div class="verified-metric-card">
+                        <h3>Relative Change</h3>
+                        <p class="verified-metric-value" id="verified-relative-change">-30.69%</p>
+                        <p class="verified-metric-label">From verified ETL metrics</p>
+                    </div>
+                </div>
+
+                <div class="verified-chart-container" role="img" aria-label="Verified child poverty rate line chart 2014 to 2024">
+                    <canvas id="verifiedPovertyChart"></canvas>
+                    <p id="verified-chart-fallback" class="verified-chart-fallback" hidden>
+                        Chart loading...
+                    </p>
+                </div>
+
+                <div class="verified-validation-warning" id="verified-validation-warning" hidden>
+                    <!-- Populated by verified-poverty-chart.js when discrepancy detected -->
+                </div>
+            </div>
+        </section>
+
+        <!-- How Community Partners Could Use This Dashboard -->
+        <section class="mc3-policy-use" id="mc3-policy-use" aria-labelledby="policy-use-heading">
+            <div class="container">
+                <h2 id="policy-use-heading">How Community Partners Could Use This Dashboard</h2>
+                <div class="mc3-policy-cards">
+                    <article class="mc3-policy-card">
+                        <h3><i class="fas fa-calculator"></i> Resource Planning</h3>
+                        <p>
+                            Child population and SNAP participation could support estimates of the scale of
+                            services that may be needed across schools, youth programs, and family supports.
+                        </p>
+                    </article>
+                    <article class="mc3-policy-card">
+                        <h3><i class="fas fa-home"></i> Family Stability</h3>
+                        <p>
+                            Poverty, unemployment, and SNAP indicators can inform conversations about household
+                            economic pressure and the supports families may need.
+                        </p>
+                    </article>
+                    <article class="mc3-policy-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education Support</h3>
+                        <p>
+                            Graduation data may help guide education conversations while noting that newer
+                            verified data is needed before using more recent claims.
+                        </p>
+                    </article>
+                    <article class="mc3-policy-card">
+                        <h3><i class="fas fa-network-wired"></i> Cross-Sector Coordination</h3>
+                        <p>
+                            Shared indicators can support conversations between schools, nonprofits, county
+                            services, healthcare providers, and community partners.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Looking Ahead -->
+        <section class="mc3-looking-ahead" id="mc3-looking-ahead" aria-labelledby="looking-ahead-heading">
+            <div class="container">
+                <h2 id="looking-ahead-heading">Looking Ahead: Continuing the Momentum</h2>
+                <p class="mc3-looking-ahead-body">
+                    The 10th Annual MC3 is both a reflection point and a planning opportunity. With MC3 not
+                    budgeted and planned for 2026 because of county budget reductions and YSB's need to focus
+                    funds on staff retention and the essential service of running an emergency shelter, the
+                    work does not have to disappear. This does not necessarily mean the end of MC3. The momentum
+                    can continue through partnerships, resource alignment, and new formats.
+                </p>
+                <p class="mc3-looking-ahead-body">
+                    This dashboard supports that transition by making verified indicators easier to understand,
+                    discuss, and update. It can help community partners continue asking what resources, partnerships,
+                    and strategies are needed to make Monroe County the best place to be a child.
+                </p>
+                <div class="mc3-action-cards">
+                    <article class="mc3-action-card">
+                        <h3><i class="fas fa-handshake"></i> Build Partnerships</h3>
+                        <p>
+                            Use shared data to bring schools, nonprofits, county departments, and community
+                            organizations into the same conversation.
+                        </p>
+                    </article>
+                    <article class="mc3-action-card">
+                        <h3><i class="fas fa-puzzle-piece"></i> Leverage Resources</h3>
+                        <p>
+                            Identify where existing programs, funding, and community assets can be aligned
+                            around child and family needs.
+                        </p>
+                    </article>
+                    <article class="mc3-action-card">
+                        <h3><i class="fas fa-chart-line"></i> Keep Learning</h3>
+                        <p>
+                            Use verified indicators to track changes over time and update the story as new
+                            data becomes available.
+                        </p>
+                    </article>
+                    <article class="mc3-action-card">
+                        <h3><i class="fas fa-shield-alt"></i> Protect Data Quality</h3>
+                        <p>
+                            Validate metrics before using them in public communication, planning, or policy
+                            discussions.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer matching Monroe County style -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MC3 Summit 2025</h3>
+                    <p>Monroe County Childhood Conditions Summit</p>
+                    <p>Hosted by: Youth Services Bureau of Monroe County & Building a Thriving Compassionate Community (BTCC)</p>
+                    <p>Official County Website: <a href="https://www.co.monroe.in.us/" target="_blank">co.monroe.in.us</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Data Sources</h3>
+                    <ul>
+                        <li>U.S. Census Bureau - American Community Survey</li>
+                        <li>Monroe County Health Department</li>
+                        <li>Indiana Department of Education</li>
+                        <li>Indiana Department of Child Services</li>
+                        <li>Youth Services Bureau of Monroe County</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Summit Focus Areas</h3>
+                    <ul>
+                        <li><a href="pages/demographics.html">Community Demographics</a></li>
+                        <li><a href="pages/education.html">Educational Excellence</a></li>
+                        <li><a href="pages/economy.html">Economic Security</a></li>
+                        <li><a href="pages/social-services.html">Child Welfare</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bloomington, IN 47404</p>
+                    <p><i class="fas fa-phone"></i> (812) 555-0123</p>
+                    <p><i class="fas fa-envelope"></i> btccbloomington@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://www.btccbloomington.org/mc3" target="_blank">www.btccbloomington.org/mc3</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Verified Research Data</h3>
+                    <p><i class="fas fa-shield-alt"></i> All data sources are verified and research-grade</p>
+                    <p><i class="fas fa-cloud"></i> <a href="https://drive.google.com/drive/folders/1MC3_Summit_2025_Verified_Datasets" target="_blank" class="gdrive-link">Access Complete Research Repository</a></p>
+                    <p class="data-verification">✓ Government-sourced data<br>✓ Academic peer review<br>✓ Regularly updated</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monroe County, Indiana | MC3 Summit Data Portal</p>
+                <p>
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Accessibility Statement</a> | 
+                    <a href="#">Terms of Use</a> | 
+                    <a href="https://drive.google.com/drive/folders/1MC3_Summit_2025_Verified_Datasets" target="_blank">Research Repository</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/verified-data.js"></script>
+    <script src="js/verified-poverty-chart.js"></script>
+    <script src="js/verified-indicators.js"></script>
+    <script src="js/dataLoader.js"></script>
+    <script src="js/visualizations.js"></script>
+    <script src="js/narratives.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

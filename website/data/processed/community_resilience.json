@@ -1,0 +1,53 @@
+{
+  "title": "Community Resilience Dashboard",
+  "description": "Comprehensive view of Monroe County's progress across key childhood condition indicators, showing significant improvements in multiple areas.",
+  "data": {
+    "key_indicators": {
+      "Child Poverty Reduction": 85,
+      "Educational Excellence": 92,
+      "Economic Stability": 87,
+      "Health & Safety": 89,
+      "Community Services": 84,
+      "Family Support": 88
+    },
+    "progress_metrics": {
+      "Poverty Reduction": "8.3 percentage points",
+      "Graduation Rate Improvement": "9.8 percentage points",
+      "Unemployment Reduction": "4.6 percentage points",
+      "Income Growth": "$17,000 increase"
+    },
+    "community_strengths": [
+      "Strong educational system",
+      "Comprehensive social services",
+      "Active community partnerships",
+      "Evidence-based interventions",
+      "Data-driven decision making"
+    ]
+  },
+  "insights": [
+    "Multi-dimensional improvement across all key indicators",
+    "Strong community support systems in place",
+    "Coordinated approach yielding positive results",
+    "Sustainable progress through evidence-based practices"
+  ],
+  "chart_type": "radar",
+  "chart_config": {
+    "categories": [
+      "Child Poverty Reduction",
+      "Educational Excellence",
+      "Economic Stability",
+      "Health & Safety",
+      "Community Services",
+      "Family Support"
+    ],
+    "values": [
+      85,
+      92,
+      87,
+      89,
+      84,
+      88
+    ],
+    "color": "#3498DB"
+  }
+}

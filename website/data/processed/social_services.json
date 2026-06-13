@@ -1,0 +1,44 @@
+{
+  "title": "Community Support Services Impact",
+  "description": "Monroe County maintains strong social safety nets with comprehensive support services that directly benefit children and families.",
+  "data": {
+    "service_participation": {
+      "SNAP Recipients": 8500,
+      "Free/Reduced Lunch": 12000,
+      "WIC Participants": 3200,
+      "Childcare Assistance": 1800,
+      "Housing Assistance": 1200,
+      "Mental Health Services": 2100
+    },
+    "service_effectiveness": {
+      "Food Security Rate": 94.2,
+      "Healthcare Coverage": 88.1,
+      "Childcare Access": 76.3,
+      "Housing Stability": 82.7
+    },
+    "program_outcomes": {
+      "Children Served Annually": 18500,
+      "Family Support Cases": 4200,
+      "Success Rate": 89.4
+    }
+  },
+  "insights": [
+    "Comprehensive support services reach over 18,500 children annually",
+    "High success rates demonstrate effective program implementation",
+    "Multi-service approach addresses various family needs",
+    "Strong community partnerships enhance service delivery"
+  ],
+  "chart_type": "bar",
+  "chart_config": {
+    "x_axis": "Service Type",
+    "y_axis": "Number of Recipients",
+    "colors": [
+      "#E74C3C",
+      "#F39C12",
+      "#9B59B6",
+      "#1ABC9C",
+      "#34495E",
+      "#E67E22"
+    ]
+  }
+}

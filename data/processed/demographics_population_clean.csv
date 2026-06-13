@@ -1,0 +1,23 @@
+year,indicator_value,indicator_unit,data_topic,indicator_name,source_file,etl_processed_at,value_type,verified,county_fips,county_name
+2000,43186.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2001,42696.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2002,42320.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2003,42376.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2004,42596.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2005,42916.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2006,43630.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2007,44180.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2008,44608.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2009,44458.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2010,45136.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2011,45536.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2012,45926.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2013,45772.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2014,46206.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2015,46004.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2016,46032.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2017,46776.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2018,46042.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2019,46224.82334,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2020,46384.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County
+2021,44236.0,count,demographics,total_child_population,data/raw/social_services/reference_repo/Child population by age group.xlsx,2026-06-13T22:00:49.213429+00:00,population_count,True,18105,Monroe County

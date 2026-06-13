@@ -1,0 +1,12 @@
+year,indicator_value,indicator_unit,data_topic,indicator_name,source_file,etl_processed_at,value_type,verified,county_fips,county_name
+2014,8.9,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2015,8.6,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2016,9.6,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2017,7.9,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2018,7.88,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2019,6.51,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2020,6.23,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2021,7.15,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2022,6.59,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2023,5.56,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County
+2024,5.13,percent,public_health,uninsured_children_rate,data/raw/misc/dataset_archive/Clinical Care.csv,2026-06-13T22:00:49.376172+00:00,rate_percent,True,18105,Monroe County

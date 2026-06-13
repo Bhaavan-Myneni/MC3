@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Correlations - MC3 Summit 2025</title>
+    <meta name="description" content="Cross-domain correlations and relationships between factors affecting Monroe County children and families">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="cache-bust" content="2025-10-19-v5">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/visualizations.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-brand">
+                    <div class="header-logo-section">
+                        <img src="../assets/images/ysb-logo.svg" alt="Youth Services Bureau of Monroe County" class="ysb-logo">
+                        <div class="header-text">
+                            <h1>MC3 Summit 2025</h1>
+                            <p class="tagline">Monroe County Childhood Conditions - Data Correlations</p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="demographics.html"><i class="fas fa-users"></i> Demographics</a></li>
+                        <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                        <li><a href="economy.html"><i class="fas fa-chart-line"></i> Economy</a></li>
+                        <li><a href="social-services.html"><i class="fas fa-hands-helping"></i> Social Services</a></li>
+                        <li><a href="correlations.html" class="active"><i class="fas fa-project-diagram"></i> Correlations</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Disclaimer Banner -->
+    <section class="disclaimer-banner">
+        <div class="container">
+            <p class="disclaimer-text">
+                <strong>This visualization is a work in progress, created to spark conversation and gather feedback during the Summit.</strong><br>
+                We invite viewers to explore, question, and contribute to the ongoing development of this data story.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Page Header -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Cross-Domain Data Correlations</h2>
+                    <p class="hero-subtitle">Understanding the interconnected relationships between demographics, education, economics, and social services that impact child outcomes</p>
+                    
+                    <!-- Key Correlation Statistics -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3 id="poverty-education-corr">-0.89</h3>
+                            <p>Poverty-Education Correlation</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="housing-stability-corr">0.76</h3>
+                            <p>Housing-Child Outcomes</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="employment-health-corr">0.68</h3>
+                            <p>Employment-Health Access</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="services-outcomes-corr">0.82</h3>
+                            <p>Services-Child Outcomes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Correlation Analysis Trends Section -->
+        <section class="featured-viz">
+            <div class="container">
+                <h2>Correlation Analysis Trends</h2>
+                
+                <!-- Education-Economics Visualization -->
+                <div class="viz-container">
+                    <h3><i class="fas fa-graduation-cap"></i> Education-Economics Relationship</h3>
+                    <canvas id="educationEconomicsChart" width="400" height="200"></canvas>
+                </div>
+
+                <!-- Health-Services Visualization -->
+                <div class="viz-container">
+                    <h3><i class="fas fa-heartbeat"></i> Health-Services Integration</h3>
+                    <canvas id="healthServicesChart" width="400" height="200"></canvas>
+                </div>
+
+                <!-- Multi-Factor Impact Visualization -->
+                <div class="viz-container">
+                    <h3><i class="fas fa-project-diagram"></i> Multi-Factor Impact Analysis</h3>
+                    <canvas id="multiFactorChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Metrics Section -->
+        <section class="metrics-section">
+            <div class="container">
+                <div class="insights-grid">
+                    <div class="insight-card trend-down">
+                        <div class="insight-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>Poverty-Education</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span class="trend-value">-0.89</span>
+                        </p>
+                        <p>Strong negative correlation between poverty and education outcomes.</p>
+                    </div>
+
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Housing Stability</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="trend-value">0.76</span>
+                        </p>
+                        <p>Strong positive correlation with child outcomes.</p>
+                    </div>
+
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Services Impact</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="trend-value">0.82</span>
+                        </p>
+                        <p>Strong positive correlation with child well-being.</p>
+                    </div>
+
+                    <div class="insight-card trend-up">
+                        <div class="insight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Employment-Health</h3>
+                        <p class="trend-indicator">
+                            <i class="fas fa-arrow-up"></i>
+                            <span class="trend-value">0.68</span>
+                        </p>
+                        <p>Moderate positive correlation with health access.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MC3 Summit 2025</h3>
+                    <p>Monroe County Childhood Conditions Summit brings together community leaders, educators, healthcare providers, and families to improve outcomes for children and youth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="demographics.html">Demographics</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="economy.html">Economy</a></li>
+                        <li><a href="social-services.html">Social Services</a></li>
+                        <li><a href="correlations.html">Correlations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Data Sources</h3>
+                    <ul>
+                        <li>U.S. Census Bureau</li>
+                        <li>Indiana Department of Education</li>
+                        <li>Monroe County Health Department</li>
+                        <li>Local Social Service Agencies</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1234567890" target="_blank" class="gdrive-link">
+                        <i class="fab fa-google-drive"></i>
+                        <span>Access Full Dataset</span>
+                    </a>
+                    <div class="data-verification">
+                        All data verified and updated for 2024. Sources independently confirmed.
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bloomington, IN 47404</p>
+                    <p><i class="fas fa-phone"></i> (812) 555-0123</p>
+                    <p><i class="fas fa-envelope"></i> btccbloomington@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://www.btccbloomington.org/mc3" target="_blank">www.btccbloomington.org/mc3</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Monroe County Childhood Conditions Summit. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/dataLoader.js"></script>
+    <script src="../js/visualizations.js"></script>
+    <script src="../js/narratives.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workbook source-build='2024.1.0' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences />
+  <datasources>
+    <datasource caption='MC3 Child Poverty' inline='true' name='MC3 Child Poverty' version='18.1'>
+      <connection class='textscan' directory='/Users/bhaavanmyneni/Downloads/MC3/data/processed' filename='children_in_poverty_clean.csv' />
+      <relation name='children_in_poverty_clean.csv' table='[children_in_poverty_clean.csv#csv]' type='table'>
+        <columns header='yes' separator=','>
+<column datatype="integer" name="year" ordinal="0" />
+<column datatype="real" name="children_in_poverty_rate_pct" ordinal="1" />
+        </columns>
+      </relation>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Poverty Trend' />
+  </worksheets>
+</workbook>
