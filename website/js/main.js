@@ -905,12 +905,28 @@ Year,Value,Category
      */
     initializeHomepageData() {
         try {
+            // This app controller loads on every page, but the
+            // "Explore Our Data Stories" nav boxes only make sense on the
+            // homepage: their links are homepage-relative (e.g.
+            // "pages/demographics.html"), so running this on a page
+            // already under /pages/ injects a section whose links 404
+            // (resolving to /pages/pages/...). Every subpage has its own
+            // local #total-population stat tile too, so that id alone
+            // isn't a safe homepage check — use a section that only
+            // exists in index.html instead, plus the URL as a backstop.
+            const isHomePage =
+                !!document.getElementById('verified-etl-hub') ||
+                /(^\/|\/index\.html)$/.test(window.location.pathname);
+            if (!isHomePage) {
+                return;
+            }
+
             // Populate the main statistics cards
             this.populateStatistics();
-            
+
             // Create navigation boxes
             this.createNavigationBoxes();
-            
+
         } catch (error) {
             console.error('Homepage data initialization failed:', error);
         }

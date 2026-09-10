@@ -52,6 +52,17 @@ logs/
 dist/
 build/
 
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+# Visual regression baselines are intentionally NOT ignored — once you
+# generate them (npm run test:visual:update, ideally in CI where the
+# Chart.js/Font Awesome CDNs are reachable), commit the resulting
+# tests/**/*-snapshots/ directory so future runs have something to diff
+# against.
+
 # Keep data files - they're needed for the website
 # !data/
 # !data/processed/
