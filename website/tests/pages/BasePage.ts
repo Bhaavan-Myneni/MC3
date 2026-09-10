@@ -57,7 +57,27 @@ export class BasePage {
     return this.nav.locator('a', { hasText: label });
   }
 
+  /**
+   * Below the 768px breakpoint the site collapses `.main-nav` behind a
+   * hamburger button (`.mobile-menu-toggle`, injected by main.js) and only
+   * shows it once that button is clicked (adds a `.mobile-open` class) —
+   * see css/style.css's `@media (max-width: 768px)` block. That's
+   * intentional responsive design, not a bug, so any test that needs to
+   * see or click a nav link must open the menu first on narrow viewports.
+   * On desktop viewports the toggle button is never rendered visible, so
+   * this is a no-op there.
+   */
+  async ensureNavOpen() {
+    const toggle = this.page.locator('.mobile-menu-toggle');
+    if ((await toggle.count()) === 0) return;
+    if (!(await toggle.isVisible())) return; // desktop viewport — nav is already shown
+    if (await this.nav.isVisible()) return; // already open
+    await toggle.click();
+    await expect(this.nav).toBeVisible();
+  }
+
   async expectNavHasAllPages() {
+    await this.ensureNavOpen();
     for (const link of navLinks) {
       const filename = link.path.split('/').pop();
       await expect(
@@ -68,6 +88,7 @@ export class BasePage {
   }
 
   async clickNav(label: string) {
+    await this.ensureNavOpen();
     await this.navLink(label).click();
   }
 

@@ -32,7 +32,10 @@ test.describe('Page load & navigation smoke tests', () => {
       async ({ page }) => {
         const po = pageObjectFor(page, route);
         await po.goto();
-        await expect(po.nav).toBeVisible();
+        // expectNavHasAllPages() opens the mobile hamburger menu itself
+        // when needed (see BasePage.ensureNavOpen) — nav.main-nav is
+        // display:none by design below the 768px breakpoint until then.
+        await expect(po.nav).toBeAttached();
         await po.expectNavHasAllPages();
       }
     );
@@ -45,6 +48,7 @@ test.describe('Page load & navigation smoke tests', () => {
       const home = new HomePage(page);
       for (const link of navLinks) {
         await home.goto();
+        await home.ensureNavOpen();
         const navLink = home.navLink(link.label);
         await expect(navLink).toBeVisible();
         await navLink.click();
